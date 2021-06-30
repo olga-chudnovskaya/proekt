@@ -2,11 +2,10 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Главная</title>
+        <title>Header</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/banner.css">
         <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
@@ -34,22 +33,26 @@
                     </div>
                     <div class="nav_menu">
                         <div class="search">
-                            <form class="d-flex">
-                                <div class="input-group">
+                            <form class="form-control">
+                                <span class="input-group">
                                     <button class="btn_search" type="submit">
                                         <img src="images/search.svg" alt="лупа"> 
                                     </button>
-                                    <input class="form-control me-2"type="search" placeholder="Поиск" aria-label="Search">
-                                </div>                               
+                                    <input type="search" class="form-control me-2" placeholder="Поиск" aria-label="Search">
+                                </span>                               
                             </form>
                         </div>
+                        
                         <div class="login">
-                            <a href=#> <img src="" alt="">Вход / Регистрация</a>
+                            <a href="#">Вход</a>
                         </div>
-                        <div class="basket">
-                            <a href=#> <img src="images/bag.svg" alt="корзина"></a>
-                         </div>
                     </div>
+
+                            <button type="button" class="basket">
+                                <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
+                            </button>
+                            <div class="basket-label">В корзине 7 фламиго</div>                            
+                    
                 </div>
         
                 <section class="bottom_header">
@@ -71,21 +74,23 @@
                                 <a href="/shop/sale" class="pulldown-point"><b>Все брюки и джинсы</b></a>
                                 <a href="#" class="pulldown-point">Брюки чинос</a>
                                 <a href="#" class="pulldown-point">Джинсы</a>
+                                <a href="#" class="pulldown-point">Джоггеры</a>
                                 <a href="#" class="pulldown-point">Классические брюки</a>
                                 <a href="#" class="pulldown-point">Брюки больших размеров</a>
-                                <a href="#" class="pulldown-point">Джоггеры</a>
+                                
                             </div>
                         </div>
                         <div class="menupoint">
-                            <a href="/shop/shirts" class="line-point">Рубашки</a>
+                            <a href="/shop/shirts" class="line-point">Рубашки и футболки</a>
                             <div>
                                 <a href="/shop/sale" class="pulldown-point"><b>Все рубашки</b></a>
                                 <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
-                                <a href="#" class="pulldown-point">Повседневные рубашки</a>
-                                <a href="#" class="pulldown-point">Классические рубашки</a>
-                                <a href="#" class="pulldown-point">Футболки и поло</a>
-                                <a href="#" class="pulldown-point">Рубашк больших размеров</a>
-                             </div>
+                                <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
+                                <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
+                                <a href="#" class="pulldown-point">Футболки с длинным рукавом</a>
+                                <a href="#" class="pulldown-point">Поло</a>
+                                <a href="#" class="pulldown-point">Рубашки больших размеров</a>
+                            </div>
                         </div>
                         <div class="menupoint">
                             <a href="shop/swimwear" class="line-point">Шорты и плавки</a>
@@ -101,16 +106,17 @@
                             <a href="/shop/suits-and-blazers" class="line-point">Костюмы и блейзеры</a>
                             <div class="pulldown">
                                 <a href="#" class="pulldown-point"><b>Все костюмы и блейзеры</b></a>
-                                <a href="#" class="pulldown-point">Повседневные шорты</a>
-                                <a href="#" class="pulldown-point">Плавки</a>
-                                <a href="#" class="pulldown-point">Шорты и плавки больших размеров</a>
+                                <a href="#" class="pulldown-point">Костюмы</a>
+                                <a href="#" class="pulldown-point">Блейзеры</a>
+                                <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
+                                <a href="#" class="pulldown-point">Костюмы и блейзеры больших размеров</a>
                             </div>
                         </div>
                         <div class="menupoint">
-                            <a href="#" class="line-point" id="sale">Распродажа</a>
+                            <a href="#" class="line-point sale">Распродажа</a>
                             <div>
-                                <a href="#" class="pulldown-point"><b>Все категории</b></a>
-                                <a href="#" class="pulldown-point">Рубашки</a>
+                                <a href="#" class="pulldown-point sale"><b>Все категории</b></a>
+                                <a href="#" class="pulldown-point">Рубашки и футболки</a>
                                 <a href="#" class="pulldown-point">Брюки и джинсы</a>
                                 <a href="#" class="pulldown-point">Шорты и плавки</a>
                                 <a href="#" class="pulldown-point">Костюмы и блейзеры</a>
@@ -121,5 +127,15 @@
                 </section>         
             </div>
         </header>
+        <!--Popup-->
+        <div class="popup-desk">
+            <div class="popup">
+                <p class="popup-header">Личный кабинет</p>
+                <input type="text" name="fullname" placeholder="Логин">
+                <input type="password" name="password" placeholder="Пароль">
+                <button type="submit">Войти</button>
+                <a href="https://yandex.ru/" class="register">Зарегистрироваться</a>
+            </div>
+        </div>
     </body>
 </html>

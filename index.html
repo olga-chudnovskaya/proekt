@@ -16,7 +16,7 @@
         <div class="wrapper">
             <header>
                 <div class="container">
-                    <div class="top_header"> 
+                    <div class="top_header">                        
                         <div id="yourcity">
                             <p>Ваш город: Москва</p>
                             <div class="div-popup">
@@ -24,8 +24,9 @@
                                 <button type="button" class="btn-yes">Да</button>
                                 <button type="button" class="btn-no">Нет</button>
                             </div>
-                        </div>
-                        <div class="logo">
+                         </div>
+                                
+                         <div class="logo">
                             <h1>
                                 <a href=#> <img src="" alt="">
                                     super clothes
@@ -47,11 +48,15 @@
                             <div class="login">
                                 <a href="#">Вход</a>
                             </div>
-                            <div class="basket">
-                                <a href=#> <img src="images/bag.svg" alt="корзина"></a>
-                            </div>
                         </div>
+    
+                                <button type="button" class="basket">
+                                    <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
+                                </button>
+                                <div class="basket-label">В корзине 7 фламиго</div>                            
+                        
                     </div>
+            
                     <section class="bottom_header">
                         <nav class="container">
                             <div class="menupoint">
@@ -64,28 +69,32 @@
                                     <a href="/shop/suits-and-blazers" class="pulldown-point">Костюмы и блейзеры</a>
                                     <a href="/shop/sale" class="pulldown-point">Распродажа</a>
                                 </div>
-                            </div><div class="menupoint">
+                            </div>
+                            <div class="menupoint">
                                 <a href="/shop/pants" class="line-point">Брюки и джинсы</a>
                                 <div>
                                     <a href="/shop/sale" class="pulldown-point"><b>Все брюки и джинсы</b></a>
                                     <a href="#" class="pulldown-point">Брюки чинос</a>
                                     <a href="#" class="pulldown-point">Джинсы</a>
+                                    <a href="#" class="pulldown-point">Джоггеры</a>
                                     <a href="#" class="pulldown-point">Классические брюки</a>
                                     <a href="#" class="pulldown-point">Брюки больших размеров</a>
-                                    <a href="#" class="pulldown-point">Джоггеры</a>
+                                    
                                 </div>
                             </div>
                             <div class="menupoint">
-                                <a href="/shop/shirts" class="line-point">Рубашки</a>
+                                <a href="/shop/shirts" class="line-point">Рубашки и футболки</a>
                                 <div>
                                     <a href="/shop/sale" class="pulldown-point"><b>Все рубашки</b></a>
                                     <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
-                                    <a href="#" class="pulldown-point">Повседневные рубашки</a>
-                                    <a href="#" class="pulldown-point">Классические рубашки</a>
-                                    <a href="#" class="pulldown-point">Футболки и поло</a>
-                                    <a href="#" class="pulldown-point">Рубашк больших размеров</a>
+                                    <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
+                                    <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
+                                    <a href="#" class="pulldown-point">Футболки с длинным рукавом</a>
+                                    <a href="#" class="pulldown-point">Поло</a>
+                                    <a href="#" class="pulldown-point">Рубашки больших размеров</a>
                                 </div>
-                            </div><div class="menupoint">
+                            </div>
+                            <div class="menupoint">
                                 <a href="shop/swimwear" class="line-point">Шорты и плавки</a>
                                 <div>
                                     <a href="#" class="pulldown-point"><b>Все шорты и плавки</b></a>
@@ -99,16 +108,17 @@
                                 <a href="/shop/suits-and-blazers" class="line-point">Костюмы и блейзеры</a>
                                 <div class="pulldown">
                                     <a href="#" class="pulldown-point"><b>Все костюмы и блейзеры</b></a>
-                                    <a href="#" class="pulldown-point">Повседневные шорты</a>
-                                    <a href="#" class="pulldown-point">Плавки</a>
-                                    <a href="#" class="pulldown-point">Шорты и плавки больших размеров</a>
+                                    <a href="#" class="pulldown-point">Костюмы</a>
+                                    <a href="#" class="pulldown-point">Блейзеры</a>
+                                    <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
+                                    <a href="#" class="pulldown-point">Костюмы и блейзеры больших размеров</a>
                                 </div>
                             </div>
                             <div class="menupoint">
                                 <a href="#" class="line-point sale">Распродажа</a>
                                 <div>
                                     <a href="#" class="pulldown-point sale"><b>Все категории</b></a>
-                                    <a href="#" class="pulldown-point">Рубашки</a>
+                                    <a href="#" class="pulldown-point">Рубашки и футболки</a>
                                     <a href="#" class="pulldown-point">Брюки и джинсы</a>
                                     <a href="#" class="pulldown-point">Шорты и плавки</a>
                                     <a href="#" class="pulldown-point">Костюмы и блейзеры</a>
@@ -116,7 +126,7 @@
                                 </div>
                             </div>
                         </nav>
-                    </section>
+                    </section>         
                 </div>
             </header>
             <main>
@@ -147,52 +157,122 @@
                         <h2>Самое популярное прямо сейчас</h2>
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col">
-                                <a href="#" class="card h-100 border-0">
+                                <div class="card h-100 border-0">
                                     <img src="images/02-4x1-Swim-D.jpg" class="card-img-top" alt="Плавки">
-                                    <span class="card-body">
-                                        <h5 class="card-title">Плавки</h5>
-                                    </span>
-                                  <span class="text-muted card-footer">
-                                    Купить сейчас &#8594;
-                                  </span>                        
-                                </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Плавки &#8594;</h5>
+                                        <a href="#" class="stretched-link">Купить сейчас</a>
+                                    </div>                    
+                                </div>
                             </div>
 
                             <div class="col">
-                                <a href="#" class="card h-100 border-0">
+                                <div class="card h-100 border-0">
                                     <img src="images/2-4x1_Rivieras_D.jpg" class="card-img-top" alt="Рубашки с коротким рукавом">
-                                    <span class="card-body">
-                                        <h5 class="card-title">Рубашки с коротким рукавом</h5>
-                                    </span>
-                                  <span class="text-muted card-footer">
-                                    Купить сейчас &#8594;
-                                  </span>                        
-                                </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Рубашки с коротким рукавом &#8594;</h5>
+                                    <a href="#" class="stretched-link">Купить сейчас</a>
+                                    </div>                        
+                                </div>
                             </div>
                             
                             <div class="col">
-                                <a href="#" class="card h-100 border-0">
+                                <div class="card h-100 border-0">
                                     <img src="images/02-4x1-Shorts-D.jpg" class="card-img-top" alt="Шорты">
-                                    <span class="card-body">
-                                        <h5 class="card-title">Шорты</h5>
-                                    </span>
-                                  <span class="text-muted card-footer">
-                                    Купить сейчас &#8594;
-                                  </span>                        
-                                </a>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Шорты &#8594;</h5>
+                                      <a href="#" class="stretched-link">Купить сейчас</a>
+                                    </div>
+                                </div>
                             </div>
+
+                            
+                        </div>
                     </section>
                     <section class="category">
                         <h2>Товары по категориям</h2>
-                        <div class="card_category"></div>
-                        <div class="card_category"></div>
-                        <div class="card_category"></div>
+                        <div class="row row-cols-1 row-cols-md-4 g-4">
+                            <div class="col">
+                                <div class="card h-100 border-0">
+                                    <img src="images/Nav-Tile-Stretch.jpg" class="card-img-top" alt="Шорты">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Рубашки и футболки &#8594;</h5>
+                                      <a href="#" class="stretched-link">Купить сейчас</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-0">
+                                    <img src="images/SWC-NavTile.jpg" class="card-img-top" alt="Шорты">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Брюки и джинсы &#8594;</h5>
+                                      <a href="#" class="stretched-link">Купить сейчас</a>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="col">
+                                <div class="card h-100 border-0">
+                                    <img src="images/NavTile-ThrowbackSwim.jpg" class="card-img-top" alt="Шорты">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Шорты и плавки &#8594;</h5>
+                                      <a href="#" class="stretched-link">Купить сейчас</a>
+                                    </div>
+                                </div>
+                            </div>
+                              
+                              <div class="col">
+                                <div class="card h-100 border-0">
+                                    <img src="images/Nav-Tile-Wedding-June.jpg" class="card-img-top" alt="Шорты">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Костюмы и блейзеры &#8594;</h5>
+                                      <a href="#" class="stretched-link">Купить сейчас</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </section>
-                    <section class="category">
+                    <section class="like_like">
                         <h2>Вам также может понравиться</h2>
-                        <div class="card_category"></div>
-                        <div class="card_category"></div>
-                        <div class="card_category"></div>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 border-0">
+                                    <img src="images/kostum_lite.jpg" class="card-img-top" alt="Cупер-легкий костюм">
+                                    <span class="card-body">
+                                        <h5 class="card-title">Cупер-легкий костюм  &#8594;</h5>
+                                    </span>
+                                  <span class="text-muted card-footer">
+                                    <a href="#" >Купить легкий костюм</a>
+                                  </span>                        
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0">
+                                    <img src="images/shirts_paty.jpg" class="card-img-top" alt="Рубашки для вечеринок">
+                                    <span class="card-body">
+                                        <h5 class="card-title">Рубашки для вечеринок  &#8594;</h5>
+                                    </span>
+                                  <span class="text-muted card-footer">
+                                    <a href="#">Купить рубашку сейчас</a>
+                                  </span>                        
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0">
+                                    <img src="images/polo_like.jpg" class="card-img-top" alt="летнее поло">
+                                    <span class="card-body">
+                                        <h5 class="card-title">
+                                        <h5 class="card-title">Очень летнее поло  &#8594;</h5>
+                                    </span>
+                                  <span class="text-muted card-footer">
+                                    <a href="#">Купить пике-поло</a>
+                                  </span>                        
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     
                 </div>         
@@ -277,6 +357,18 @@
                 </section>
                </div>                
             </footer>
-        </div> 
+        </div>
+
+        <!--Popup-->
+        <div class="popup-desk">
+            <div class="popup">
+                <p class="popup-header">Личный кабинет</p>
+                <input type="text" name="fullname" placeholder="Логин">
+                <input type="password" name="password" placeholder="Пароль">
+                <button type="submit">Войти</button>
+                <a href="https://yandex.ru/" class="register">Зарегистрироваться</a>
+            </div>
+        </div>
+
     </body>
 </html>
