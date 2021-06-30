@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;600&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+body {
+	margin: 0;
+	font: normal 16px Montserrat, sans-serif;
+	min-width: 320px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+a:hover{
+	color: inherit;
+}
+h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+}
+h2 {
+	font-size: 1.5em;
+	line-height: 100%;	
+}
+h3 {
+    font-size: 1.25em;
+}
+button {
+    font: inherit;
+}
+section {
+	margin-top: 2em;
+}
+section > h2 {
+	padding: 20px 0;
+}
+.container {
+	width: 1440px;
+	margin: 0 auto;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.div-popup:active  {
+	position: fixed;
+	top: 320px;
+	left: 50%;
+	margin-left: -250px;
+	width: 450px;
+	background: #fff;
+	border-radius: 10px;
+	color: #000;
+}
+/* header */
+header {
+	background: #fff;
+	color: #000;
+}
+.top_header {	
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	height: auto;
+	padding-top: 2%;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	font-family: 'Cormorant', serif;
+	font-size: 3em;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+.logo a:hover {
+	opacity: 0.5;
+}
+.nav_menu {
+	display: flex;
+	flex-wrap: nowrap;
+	flex: 1 1;
+	justify-content: flex-end;
+	padding-right: 1.5em;		
+}
+.nav_menu > div {
+	margin: 0 0.5em;
+	align-items: center;
+}
+.login, .basket{
+	display: flex;
+	align-items: center;
+}
+
+
+span.input-group {
+    padding-right: 16px;
+	border-radius: 50px;
+	border: 1px solid #ddd;
+}
+
+.btn_search {
+	width: 40px;
+    height: 40px;
+	border-width: 0;
+    background: none;
+}
+.form-control {
+	border: none;
+}
+.form-control.me-2:focus {
+	box-shadow: none;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.bottom_header {
+	color:#000;
+}
+#yourcity {
+	flex: 1 1;
+	display: flex;
+	align-items: center;
+	padding-left: 1.5em;
+	cursor: pointer;
+}
+.div-popup {
+	opacity: 0;
+	display: none;
+	background: #fff;
+}
+.line-point {
+	display: block;
+	color: #000;
+}
+.pulldown-point {
+	color: #000;
+	padding: 0.5em 0.25em 1em;
+	margin: 0 0.5em;
+	background: #fff;
+}
+.search {
+	max-width: 200px;
+}
+.menupoint {
+	display: inline-block;
+	position: relative;
+	margin: 0 1em;
+	line-height: 1.5;
+	padding: 0.5em 0.25em 1em;
+	border-bottom: 1px solid transparent;
+}
+.menupoint:hover {
+	color: #000;	
+	border-bottom: 1px solid #000;
+}
+.menupoint > div {
+	display: none;
+	position: absolute;
+	width: 100vw;
+	top: 2em;
+	left: 0;
+	padding: 24px 0 4px;
+	background: #fff;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
+	z-index: 99;
+}
+.menupoint:hover > div,
+.menupoint > div:hover {
+	display: block;
+}
+.menupoint:hover .line-point {
+	color: #000;
+}
+.line-point, .pulldown-point {
+    display: block;
+}
+.pulldown-point:hover {
+    color: #000;	
+    text-decoration: underline;    
+}
+.sale {
+    color: red;
+}
+/* main */
+main {
+	flex: 1 1 auto;
+	position: relative;
+}
+.carousel-caption {
+	padding-top: 2em;
+}
+.carousel-caption h2 {
+	font-family: 'Cormorant', serif;
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: 1px;
+	font-size: 4em;
+}
+.slogan {
+	font-weight: 500;
+	font-size: 20px;
+	margin: 8px auto 4px;
+	line-height: 1.5;
+}
+.subscribe {
+	display: flex;
+	flex-direction: column;
+	background : #b8c6df;
+	width: 100%;
+	margin: 1em auto 0;
+	padding: 2em 0;
+}
+.subscribe span {
+	padding: 0.5em;
+}
+.subscribe span.input-group{
+	border: none;
+}
+.subscribe a {
+	display: inline;
+	text-decoration: underline;
+}
+
+/* footer */
+footer {
+	margin-top: 0;
+	background: black;
+	color: white;
+	padding-bottom: 20px;
+}
+.footer_linc {
+	padding: 0.5em 0;
+}
+.top_footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	height: auto;	
+}
+.top_footer .container {
+	flex-direction: row;
+	display: flex;	
+	justify-content: space-between;
+	align-items: top;
+	flex-wrap: wrap;
+}
+.contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.btn-social{
+	margin: 0.75em;
+	opacity: .5;
+}
+.btn-social:hover{
+	opacity: 1;
+}
+.bottom_footer {
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+}
