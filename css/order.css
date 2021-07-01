@@ -1,0 +1,78 @@
+/* order */
+.order {
+	width: 100%;
+}
+.nihil {
+	display: none;
+}
+.empty .nihil {
+	display: block;
+}
+.empty .table,
+.empty #orderdata {
+	display: none;
+}
+.rub:after, .sum:after, .allsum:after {
+	content: ' \20bd';
+}
+.num input {
+	border: 0;
+	width: 50px;
+}
+.del {
+	width: 60px;
+}
+.del > div {
+	width: 24px;
+	height: 24px;
+	border-radius: 24px;
+	text-align: center;
+	font: normal 24px/24px Arial;
+	transform: rotate(45deg);
+	transform-origin: center;
+	background: red;
+	color: white;
+	cursor: pointer;
+}
+
+/* form_order */
+.order_form {
+    width: 80%;
+	margin: 1.5em auto;
+	padding: 1.5em;
+    background: #ddd;
+	box-shadow: 5px 10px 15px rgba(110, 125, 134, 0.2);	
+}
+.order form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    margin: 1.5em auto;
+    width: 80%;
+}
+.order form > label {
+	line-height: 2em;
+	padding: 1em 0 0.25em 0;
+}
+.order form > input, textarea {
+	box-sizing: border-box;
+    padding: 1em;
+    border: 1px solid #aaa;   
+}
+
+::placeholder {
+	line-height: 2em;
+	color: #aaa;
+
+}
+
+.order form  button {
+    align-self: center;
+	width: 80%;
+    padding: 1em 0;
+    margin: 1em 0;
+    border-radius: 0%;
+
+}
+	
+

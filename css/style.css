@@ -147,12 +147,26 @@ nav {
 .search {
 	max-width: 200px;
 }
+button.login {
+	background: #fff;
+	border: none;
+}
+
 button.basket {
 	background: none;
 	float: right;
 	margin: 15px 0 15px 30px;
 	border: none;
 	line-height: 40px;
+}
+.basket span {
+	background: #999;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	color: #fff;
+ 	margin: 0 0 1.5em 0;
+	line-height: 2em;
 }
 .basket-label {
 	position: absolute;
@@ -282,8 +296,8 @@ aside {
 	transition: all 1s ease;
 }
 .open .submenu_mover {
-	transform: rotate(180deg);
-	color: #fff;
+	transform: rotate(45deg);
+	color: #888;
 }
 .submenu {
 	height: 0;
@@ -297,7 +311,7 @@ aside {
 
 .subscribe {
 	display: flex;	
-	background : #80c0c2;	
+	background : #a7cdce;	
 	margin: 1em auto;
 	padding: 2em 0;
 }
@@ -347,6 +361,10 @@ footer {
 	flex-direction: column;
 	justify-content: space-between;
 }
+.contacts a {
+	padding-bottom: 1em;
+}
+
 .btn-social{
 	margin: 0.75em;
 	opacity: .5;
@@ -460,6 +478,9 @@ footer {
 	}
 }
 @media (min-width: 768px) {
+	.catmenu {
+		display: none;
+	}
 	.cat-blocks {
 		gap: 0.25em;
 	}
