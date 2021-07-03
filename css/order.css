@@ -1,4 +1,8 @@
 /* order */
+h1 {
+	text-align: left;
+	margin: 0 0 0 2em;
+}
 .order {
 	width: 100%;
 }
@@ -36,25 +40,25 @@
 }
 
 /* form_order */
-.order_form {
-    width: 80%;
+.order-form {
+    width: 60%;
 	margin: 1.5em auto;
 	padding: 1.5em;
     background: #ddd;
 	box-shadow: 5px 10px 15px rgba(110, 125, 134, 0.2);	
 }
-.order form {
+.order-form form {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
     margin: 1.5em auto;
-    width: 80%;
+    width: 70%;
 }
-.order form > label {
+.order-form form > label {
 	line-height: 2em;
 	padding: 1em 0 0.25em 0;
 }
-.order form > input, textarea {
+.order-form form > input, textarea {
 	box-sizing: border-box;
     padding: 1em;
     border: 1px solid #aaa;   
@@ -66,11 +70,11 @@
 
 }
 
-.order form  button {
+.order-form form  button {
     align-self: center;
-	width: 80%;
+	width: 100%;
     padding: 1em 0;
-    margin: 1em 0;
+    margin: 2em 0;
     border-radius: 0%;
 
 }

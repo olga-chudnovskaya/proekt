@@ -7,11 +7,12 @@ $(function(){
     });
 
       $(document).on('click', '.register', function(e){
-        $('.popup').html('<p class="popup-header">Личный кабинет закрыт на ремонт.<br>Регистрации не будет до 1 января.</p><a href="https://yandex.ru/" class="register">Войти</a>');
+        $('.popup').html('<p class="popup-header">Личный кабинет закрыт на ремонт.<br>Личный кабинет закрыт на ремонт.<br>Личный кабинет закрыт на ремонт.<br></p><a href="https://yandex.ru/" class="register">Войти</a>');
     });
 
 
-
+    $('#privet').click(function(){
+        alert('Привет!')});
 
     
 });

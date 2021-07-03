@@ -2,15 +2,11 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Order</title>
+        <title>Order Page</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/order.css">
-        <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.bundle.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="js/login.js"></script>
+        <link rel="stylesheet" href="css/calendar.css">        
     </head>
     <body>
         <div class="wrapper">
@@ -26,45 +22,41 @@
                             </div>
                          </div>
                                 
-                         <div class="logo">
-                            <h1>
-                                <a href=#> <img src="" alt="">
-                                    super clothes
+                       
+                                <a href=# class="logo">
+                                    super clothes                                 
                                 </a>
-                            </h1>
-                        </div>
-                        <div class="nav_menu">
-                            <div class="search">
-                                <form class="form-control">
-                                    <span class="input-group">
-                                        <button class="btn_search" type="submit">
-                                            <img src="images/search.svg" alt="лупа"> 
-                                        </button>
-                                        <input type="search" class="form-control me-2" placeholder="Поиск" aria-label="Search">
-                                    </span>                               
-                                </form>
-                            </div>
-                            
-                            <button type="button" class="login">
-                                Вход v
-                            </button>
-                            
-                        </div>
-    
-                                <button type="button" class="basket">
-                                    
-                                    <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
-                                    <span>0</span>
-                                </button>
-                                <div class="basket-label">В корзине 7 фламиго</div>                            
+                                       
                         
+                        <div class="nav_menu">                        
+                            <div class="input-group search">
+                                <button class="btn-search" type="submit">
+                                    <img src="images/search.svg" alt="лупа"> 
+                                </button>
+                                <input type="search" class="form-control" placeholder="Поиск" aria-label="Search">
+                            </div>
+    
+                            <button type="button" class="login">
+                               <span>Вход </span> 
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                            <button type="button" class="like"> 
+                                <i class="far fa-heart"></i>
+                             </button>
+                             <button type="button" class="basket">                                    
+                                <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
+                                <span class="basket-item">0</span>
+                            </button>
+                            <div class="basket-label">В корзине 7 фламиго</div>                            
+                        </div>
                     </div>
+                    
                     <section class="bottom_header">
                         <nav class="container">
                             <div class="menupoint">
                                 <a href="/shop/new" class="line-point">Новое</a>
-                                <div>
-                                    <a href="/shop/sale" class="pulldown-point"><b>Купить всё новое</b></a>
+                                <div class="pulldown">
+                                    <a href="/shop/sale" class="pulldown-point">Купить всё новое</a>
                                     <a href="/shop/pants" class="pulldown-point">Брюки и джинсы</a>
                                     <a href="/shop/shirts" class="pulldown-point">Рубашки</a>
                                     <a href="/shop/swimwear" class="pulldown-point">Шорты и плавки</a>
@@ -74,8 +66,8 @@
                             </div>
                             <div class="menupoint">
                                 <a href="/shop/pants" class="line-point">Брюки и джинсы</a>
-                                <div>
-                                    <a href="/shop/sale" class="pulldown-point"><b>Все брюки и джинсы</b></a>
+                                <div class="pulldown">
+                                    <a href="/shop/sale" class="pulldown-point">Все брюки и джинсы</a>
                                     <a href="#" class="pulldown-point">Брюки чинос</a>
                                     <a href="#" class="pulldown-point">Джинсы</a>
                                     <a href="#" class="pulldown-point">Джоггеры</a>
@@ -86,8 +78,8 @@
                             </div>
                             <div class="menupoint">
                                 <a href="/shop/shirts" class="line-point">Рубашки и футболки</a>
-                                <div>
-                                    <a href="/shop/sale" class="pulldown-point"><b>Все рубашки</b></a>
+                                <div class="pulldown">
+                                    <a href="/shop/sale" class="pulldown-point">Все рубашки</a>
                                     <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
                                     <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
                                     <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
@@ -98,8 +90,8 @@
                             </div>
                             <div class="menupoint">
                                 <a href="shop/swimwear" class="line-point">Шорты и плавки</a>
-                                <div>
-                                    <a href="#" class="pulldown-point"><b>Все шорты и плавки</b></a>
+                                <div class="pulldown">
+                                    <a href="#" class="pulldown-point">Все шорты и плавки</a>
                                     <a href="#" class="pulldown-point">Шорты чинос</a>
                                     <a href="#" class="pulldown-point">Повседневные шорты</a>
                                     <a href="#" class="pulldown-point">Плавки</a>
@@ -109,7 +101,7 @@
                             <div class="menupoint">
                                 <a href="/shop/suits-and-blazers" class="line-point">Костюмы и блейзеры</a>
                                 <div class="pulldown">
-                                    <a href="#" class="pulldown-point"><b>Все костюмы и блейзеры</b></a>
+                                    <a href="#" class="pulldown-point">Все костюмы и блейзеры</a>
                                     <a href="#" class="pulldown-point">Костюмы</a>
                                     <a href="#" class="pulldown-point">Блейзеры</a>
                                     <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
@@ -118,8 +110,8 @@
                             </div>
                             <div class="menupoint">
                                 <a href="#" class="line-point sale">Распродажа</a>
-                                <div>
-                                    <a href="#" class="pulldown-point sale"><b>Все категории</b></a>
+                                <div class="pulldown">
+                                    <a href="#" class="pulldown-point sale">Все категории</a>
                                     <a href="#" class="pulldown-point">Рубашки и футболки</a>
                                     <a href="#" class="pulldown-point">Брюки и джинсы</a>
                                     <a href="#" class="pulldown-point">Шорты и плавки</a>
@@ -133,114 +125,119 @@
                 </div>
             </header>
 
-            <main class="container catalog">
-                <section class="order">
-                    <h1>Корзина</h1>
-                    <p class="nihil">Ваша корзина пуста.</p>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Наименование</th>
-                                <th scope="col">Количество</th>
-                                <th scope="col">Цена</th>
-                                <th scope="col">Сумма</th>
-                                <th scope="col">Удалить</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row" data-tovar="5711">1</th>
-                                <td>Товар 1</td>
-                                <td class="num">
-                                    <input type="number" value="10" pattern="^[0-9]*$">
-                                </td>
-                                <td class="rub">5</td>
-                                <td class="sum">50</td>
-                                <td class="del">
-                                    <div>+</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" data-tovar="3432">2</th>
-                                <td>Товар 2</td>
-                                <td class="num">
-                                    <input type="number" value="10" pattern="^[0-9]*$">
-                                </td>
-                                <td class="rub">10</td>
-                                <td class="sum">100</td>
-                                <td class="del">
-                                    <div>+</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" data-tovar="4846">3</th>
-                                <td>Товар 3</td>
-                                <td class="num">
-                                    <input type="number" value="10" pattern="^[0-9]*$">
-                                </td>
-                                <td class="rub">15</td>
-                                <td class="sum">150</td>
-                                <td class="del">
-                                    <div>+</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th scope="row">Итого</th>
-                                <td colspan="5" class="allsum">300</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-
-                    <div class="order_form">
-                        <form action="#" method="post" id="orderdata">
-                            <h3>Информация для заказа</h3>                               
-                            
-                                <label for="name">ФИО</label>
-                                <input type="text" placeholder="Фамилия Имя Отчество" id="name" name="user_name">
-
-                                <label for="address">Адрес</label>
-                                <input type="text" placeholder="Адрес" id="address" name="user_address">
-                           
-                                
-                                <label for="mail">E-mail</label>                                
-                                <input type="email" placeholder="E-mail" id="email" name="user_mail">
-
-                                <label for="date">Дата</label>                                
-                                <input type="date" placeholder="#" id="date" name="date">
-                            
-                                
-                                <label for="msg">Сообщение</label>
-                                <textarea placeholder="Ваш комментарий" id="comment" name="user_comment"></textarea>
-                          
-                                <button type="submit" class="btn btn-dark">Отправить заказ</button>
-                        </form>
-                     </div>      
-                </section>               
-                
-            </main> 
-
-            <section class="subscribe">
+            <main >
                 <div class="container">
-                    <div>ПОДПИСАТЬСЯ НА АКЦИИ И СПЕЦПРЕДЛОЖЕНИЯ</div>                    
-                    <form>                       
-                        <span class="input-group">
-                            <span class="input-group-text" id="addon-wrapping">@</span>
-                            <input type="text" class="form-control" placeholder="Адрес электронной почты" aria-label="Username" aria-describedby="addon-wrapping">
-                            <button class="btn btn-secondary" type="button" id="button-addon2">Подписаться</button>
-                        </span>                   
-                    </form>
-                    <div>
-                        Нажимая на кнопку “Подписаться”, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с 
-                        <a href=# class="linc_form">политикой конфиденциальности.</a><br>
-                        Вы можете отписаться в любое время.
-                    </div>				
+                    <h1  id="privet">Корзина</h1>
+                    <section class="order">                    
+                        <p class="nihil">Ваша корзина пуста.</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Наименование</th>
+                                    <th scope="col">Количество</th>
+                                    <th scope="col">Цена</th>
+                                    <th scope="col">Сумма</th>
+                                    <th scope="col">Удалить</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" data-tovar="5711">1</th>
+                                    <td>Товар 1</td>
+                                    <td class="num">
+                                        <input type="number" value="10" pattern="^[0-9]*$">
+                                    </td>
+                                    <td class="rub">5</td>
+                                    <td class="sum">50</td>
+                                    <td class="del">
+                                        <div>+</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" data-tovar="3432">2</th>
+                                    <td>Товар 2</td>
+                                    <td class="num">
+                                        <input type="number" value="10" pattern="^[0-9]*$">
+                                    </td>
+                                    <td class="rub">10</td>
+                                    <td class="sum">100</td>
+                                    <td class="del">
+                                        <div>+</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" data-tovar="4846">3</th>
+                                    <td>Товар 3</td>
+                                    <td class="num">
+                                        <input type="number" value="10" pattern="^[0-9]*$">
+                                    </td>
+                                    <td class="rub">15</td>
+                                    <td class="sum">150</td>
+                                    <td class="del">
+                                        <div>+</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Итого</th>
+                                    <td colspan="5" class="allsum">300</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                        <div class="order-form">
+                            <form action="#" method="post" id="orderdata">
+                                <h3>Информация для заказа</h3>                               
+                                
+                                    <label for="name">ФИО</label>
+                                    <input type="text" placeholder="Фамилия Имя Отчество" id="name" name="user_name">
+
+                                    <label for="address">Адрес</label>
+                                    <input type="text" placeholder="Адрес" id="address" name="user_address">
+                            
+                                    
+                                    <label for="mail">E-mail</label>                                
+                                    <input type="email" placeholder="E-mail" id="email" name="user_mail">
+
+                                    <label for="date">Дата</label>                                
+                                    <input type="text" placeholder="дд.мм.гггг" id="date" name="date">
+                                
+                                    
+                                    <label for="msg">Сообщение</label>
+                                    <textarea placeholder="Ваш комментарий" id="comment" name="user_comment"></textarea>
+                            
+                                    <button type="submit" class="btn btn-dark">Отправить заказ</button>
+                            </form>
+                        </div>      
+                    </section>
                 </div>
-            </section>
-    
+            </main> 
             <footer>
+                <section class="subscribe">
+                    <div class="container">
+                        <div class="row py-5">				
+                            <div class="col-md-6">
+                                <h6>ПОДПИСАТЬСЯ НА АКЦИИ И СПЕЦПРЕДЛОЖЕНИЯ</h6>
+                                <p>
+                                    Нажимая на кнопку “Подписаться”, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с 
+                                    <a href=#> политикой конфиденциальности.</a>
+                                </p>								
+                                <p>
+                                    *Вы можете отписаться в любое время.
+                                </p>							  
+                            </div>
+                            <div class="col-md-6">                      
+                                    <span class="input-group">
+                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                        <input type="text" class="form-control" placeholder="Адрес электронной почты" aria-label="Username" aria-describedby="addon-wrapping">
+                                        <button class="btn btn-secondary" type="button" id="button-addon2">Подписаться</button>
+                                    </span>                   
+                            </div>
+                        </div>		                  
+                    </div>
+                </section>
                 <div class="container">
                  <section class="top_footer">
                      <div class = "contacts">
@@ -248,13 +245,13 @@
                              <a href="#"">super clothes</a> 
                           </div> 
                           <div>
-                            <a href="#">
+                            <a href="tel:84951111111">
                                 <i class="fas fa-phone"></i>
-                                +7 (495) 111-11-11 (Москва)
+                                8 (499) 111-11-11 (Москва)
                             </a>
-                            <a href="#">
+                            <a href="tel:88003333333">
                                 <i class="fas fa-phone"></i>
-                                +7 (800) 333-33-33 (Россия)
+                                8 (800) 333-33-33 (Россия)
                             </a>
                           </div>
                          
@@ -292,7 +289,7 @@
                                  <img src="images/icon_you.svg" alt="youtube">
                              </a>        
                              <a class="btn-social" href="#" target="_blank">
-                                 <img src="images/icon_insta.svg" alt="imstagram">
+                                 <img src="images/icon_insta.svg" alt="instagram">
                              </a>        
                              <a class="btn-social" href="#" target="_blank">
                                  <img src="images/icon_fb.svg" alt="facebook">
@@ -308,15 +305,19 @@
             </footer>
         </div>
         
-        <!--Popup-->
+        <!--Popup календарь-->
         <div class="popup-desk">
             <div class="popup">
-                <p class="popup-header">Личный кабинет</p>
-                <input type="text" name="fullname" placeholder="Логин">
-                <input type="password" name="password" placeholder="Пароль">
-                <button type="submit">Войти</button>
-                <a href="https://yandex.ru/" class="register">Зарегистрироваться</a>
             </div>
         </div>
+        <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/order.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/calendar.js"></script>
+        <script src="js/scripts.js"></script>
+        
     </body>
 </html>

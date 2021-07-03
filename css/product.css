@@ -1,7 +1,5 @@
 /* aside */
 aside {
-	flex: none;
-	width: 180px;
 	background: brown;
 	color: #fff;
 }
@@ -20,7 +18,10 @@ aside {
 .catmenu_item a {
 	display: block;
 	color: #fff;
+	background: #9ff14280;
+	border: 1px solid #555;
 	text-decoration: none;
+	line-height: 1.5em;
 }
 .catmenu_item a:hover {
 	text-decoration: underline;
@@ -41,10 +42,27 @@ aside {
 }
 .submenu a {
 	position: relative;
-	padding-left: 20px;
+	padding-left: 1.5em;
 }
 .submenu a:before {
 	content: '->';
 	position: absolute;
 	left: 0;
+}
+
+/* different screens */
+@media (min-width: 576px) {
+	
+}
+@media (min-width: 768px) {
+	
+}
+@media (min-width: 992px) {
+	
+}
+@media (min-width: 1200px) {
+	
+}
+@media (min-width: 1400px) {
+	
 }

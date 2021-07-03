@@ -3,14 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Главная</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/banner.css">
-        <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.bundle.js"></script>
-        <script src="js/scripts.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -24,45 +18,40 @@
                                 <button type="button" class="btn-yes">Да</button>
                                 <button type="button" class="btn-no">Нет</button>
                             </div>
-                         </div>
-                                
-                         <div class="logo">
-                            <h1>
-                                <a href=#> <img src="" alt="">
-                                    super clothes
-                                </a>
-                            </h1>
-                        </div>
-                        <div class="nav_menu">
-                            <div class="search">
-                                <form class="form-control">
-                                    <span class="input-group">
-                                        <button class="btn_search" type="submit">
-                                            <img src="images/search.svg" alt="лупа"> 
-                                        </button>
-                                        <input type="search" class="form-control me-2" placeholder="Поиск" aria-label="Search">
-                                    </span>                               
-                                </form>
-                            </div>
-                            
-                            <div class="login">
-                                <a href="#">Вход</a>
-                            </div>
-                        </div>
-    
-                                <button type="button" class="basket">
-                                    <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
-                                </button>
-                                <div class="basket-label">В корзине 7 фламиго</div>                            
+                         </div>                              
+                        <a href=# class="logo">
+                            super clothes                                 
+                        </a>                                      
                         
+                        <div class="nav_menu">                        
+                            <div class="input-group search">
+                                <button class="btn-search" type="submit">
+                                    <img src="images/search.svg" alt="лупа"> 
+                                </button>
+                                <input type="search" class="form-control" placeholder="Поиск" aria-label="Search">
+                            </div>
+    
+                            <button type="button" class="login">
+                               <span>Вход </span> 
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                            <button type="button" class="like"> 
+                                <i class="far fa-heart"></i>
+                             </button>
+                             <button type="button" class="basket">                                    
+                                <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
+                                <span class="basket-item">0</span>
+                            </button>
+                            <div class="basket-label">В корзине 7 фламиго</div>                            
+                        </div>
                     </div>
-            
+                    
                     <section class="bottom_header">
                         <nav class="container">
                             <div class="menupoint">
                                 <a href="/shop/new" class="line-point">Новое</a>
-                                <div>
-                                    <a href="/shop/sale" class="pulldown-point"><b>Купить всё новое</b></a>
+                                <div class="pulldown">
+                                    <a href="/shop/sale" class="pulldown-point">Купить всё новое</a>
                                     <a href="/shop/pants" class="pulldown-point">Брюки и джинсы</a>
                                     <a href="/shop/shirts" class="pulldown-point">Рубашки</a>
                                     <a href="/shop/swimwear" class="pulldown-point">Шорты и плавки</a>
@@ -72,8 +61,8 @@
                             </div>
                             <div class="menupoint">
                                 <a href="/shop/pants" class="line-point">Брюки и джинсы</a>
-                                <div>
-                                    <a href="/shop/sale" class="pulldown-point"><b>Все брюки и джинсы</b></a>
+                                <div class="pulldown">
+                                    <a href="/shop/sale" class="pulldown-point">Все брюки и джинсы</a>
                                     <a href="#" class="pulldown-point">Брюки чинос</a>
                                     <a href="#" class="pulldown-point">Джинсы</a>
                                     <a href="#" class="pulldown-point">Джоггеры</a>
@@ -84,8 +73,8 @@
                             </div>
                             <div class="menupoint">
                                 <a href="/shop/shirts" class="line-point">Рубашки и футболки</a>
-                                <div>
-                                    <a href="/shop/sale" class="pulldown-point"><b>Все рубашки</b></a>
+                                <div class="pulldown">
+                                    <a href="/shop/sale" class="pulldown-point">Все рубашки</a>
                                     <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
                                     <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
                                     <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
@@ -96,8 +85,8 @@
                             </div>
                             <div class="menupoint">
                                 <a href="shop/swimwear" class="line-point">Шорты и плавки</a>
-                                <div>
-                                    <a href="#" class="pulldown-point"><b>Все шорты и плавки</b></a>
+                                <div class="pulldown">
+                                    <a href="#" class="pulldown-point">Все шорты и плавки</a>
                                     <a href="#" class="pulldown-point">Шорты чинос</a>
                                     <a href="#" class="pulldown-point">Повседневные шорты</a>
                                     <a href="#" class="pulldown-point">Плавки</a>
@@ -107,7 +96,7 @@
                             <div class="menupoint">
                                 <a href="/shop/suits-and-blazers" class="line-point">Костюмы и блейзеры</a>
                                 <div class="pulldown">
-                                    <a href="#" class="pulldown-point"><b>Все костюмы и блейзеры</b></a>
+                                    <a href="#" class="pulldown-point">Все костюмы и блейзеры</a>
                                     <a href="#" class="pulldown-point">Костюмы</a>
                                     <a href="#" class="pulldown-point">Блейзеры</a>
                                     <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
@@ -116,8 +105,8 @@
                             </div>
                             <div class="menupoint">
                                 <a href="#" class="line-point sale">Распродажа</a>
-                                <div>
-                                    <a href="#" class="pulldown-point sale"><b>Все категории</b></a>
+                                <div class="pulldown">
+                                    <a href="#" class="pulldown-point sale">Все категории</a>
                                     <a href="#" class="pulldown-point">Рубашки и футболки</a>
                                     <a href="#" class="pulldown-point">Брюки и джинсы</a>
                                     <a href="#" class="pulldown-point">Шорты и плавки</a>
@@ -126,7 +115,8 @@
                                 </div>
                             </div>
                         </nav>
-                    </section>         
+                    </section>
+                             
                 </div>
             </header>
             <main>
@@ -170,8 +160,8 @@
                                 <div class="card h-100 border-0">
                                     <img src="images/2-4x1_Rivieras_D.jpg" class="card-img-top" alt="Рубашки с коротким рукавом">
                                     <div class="card-body">
-                                        <h5 class="card-title">Рубашки с коротким рукавом &#8594;</h5>
-                                    <a href="#" class="stretched-link">Купить сейчас</a>
+                                        <h5 class="card-title">Летние рубашки</h5>
+                                    <a href="#" class="stretched-link">Купить сейчас &#8594;</a>
                                     </div>                        
                                 </div>
                             </div>
@@ -180,8 +170,8 @@
                                 <div class="card h-100 border-0">
                                     <img src="images/02-4x1-Shorts-D.jpg" class="card-img-top" alt="Шорты">
                                     <div class="card-body">
-                                      <h5 class="card-title">Шорты &#8594;</h5>
-                                      <a href="#" class="stretched-link">Купить сейчас</a>
+                                      <h5 class="card-title">Шорты</h5>
+                                      <a href="#" class="stretched-link">Купить сейчас  &#8594;</a>
                                     </div>
                                 </div>
                             </div>
@@ -196,8 +186,8 @@
                                 <div class="card h-100 border-0">
                                     <img src="images/Nav-Tile-Stretch.jpg" class="card-img-top" alt="Шорты">
                                     <div class="card-body">
-                                      <h5 class="card-title">Рубашки и футболки &#8594;</h5>
-                                      <a href="#" class="stretched-link">Купить сейчас</a>
+                                      <h5 class="card-title">Рубашки и футболки</h5>
+                                      <a href="#" class="stretched-link">Купить сейчас  &#8594;</a>
                                     </div>
                                 </div>
                             </div>
@@ -205,8 +195,8 @@
                                 <div class="card h-100 border-0">
                                     <img src="images/SWC-NavTile.jpg" class="card-img-top" alt="Шорты">
                                     <div class="card-body">
-                                      <h5 class="card-title">Брюки и джинсы &#8594;</h5>
-                                      <a href="#" class="stretched-link">Купить сейчас</a>
+                                      <h5 class="card-title">Брюки и джинсы</h5>
+                                      <a href="#" class="stretched-link">Купить сейчас  &#8594;</a>
                                     </div>
                                 </div>
                             </div>
@@ -214,8 +204,8 @@
                                 <div class="card h-100 border-0">
                                     <img src="images/NavTile-ThrowbackSwim.jpg" class="card-img-top" alt="Шорты">
                                     <div class="card-body">
-                                      <h5 class="card-title">Шорты и плавки &#8594;</h5>
-                                      <a href="#" class="stretched-link">Купить сейчас</a>
+                                      <h5 class="card-title">Шорты и плавки</h5>
+                                      <a href="#" class="stretched-link">Купить сейчас &#8594;</a>
                                     </div>
                                 </div>
                             </div>
@@ -224,8 +214,8 @@
                                 <div class="card h-100 border-0">
                                     <img src="images/Nav-Tile-Wedding-June.jpg" class="card-img-top" alt="Шорты">
                                     <div class="card-body">
-                                      <h5 class="card-title">Костюмы и блейзеры &#8594;</h5>
-                                      <a href="#" class="stretched-link">Купить сейчас</a>
+                                      <h5 class="card-title">Костюмы и блейзеры</h5>
+                                      <a href="#" class="stretched-link">Купить сейчас  &#8594;</a>
                                     </div>
                                 </div>
                             </div>
@@ -240,10 +230,10 @@
                                 <div class="card h-100 border-0">
                                     <img src="images/kostum_lite.jpg" class="card-img-top" alt="Cупер-легкий костюм">
                                     <span class="card-body">
-                                        <h5 class="card-title">Cупер-легкий костюм  &#8594;</h5>
+                                        <h5 class="card-title">Cупер-легкий костюм</h5>
                                     </span>
                                   <span class="text-muted card-footer">
-                                    <a href="#" >Купить легкий костюм</a>
+                                    <a href="#" >Купить легкий костюм   &#8594;</a>
                                   </span>                        
                                 </div>
                             </div>
@@ -252,10 +242,10 @@
                                 <div class="card h-100 border-0">
                                     <img src="images/shirts_paty.jpg" class="card-img-top" alt="Рубашки для вечеринок">
                                     <span class="card-body">
-                                        <h5 class="card-title">Рубашки для вечеринок  &#8594;</h5>
+                                        <h5 class="card-title">Рубашки для вечеринок</h5>
                                     </span>
                                   <span class="text-muted card-footer">
-                                    <a href="#">Купить рубашку сейчас</a>
+                                    <a href="#">Купить рубашку сейчас   &#8594;</a>
                                   </span>                        
                                 </div>
                             </div>
@@ -264,11 +254,10 @@
                                 <div class="card h-100 border-0">
                                     <img src="images/polo_like.jpg" class="card-img-top" alt="летнее поло">
                                     <span class="card-body">
-                                        <h5 class="card-title">
-                                        <h5 class="card-title">Очень летнее поло  &#8594;</h5>
+                                        <h5 class="card-title">Очень летнее поло</h5>
                                     </span>
                                   <span class="text-muted card-footer">
-                                    <a href="#">Купить пике-поло</a>
+                                    <a href="#">Купить пике-поло   &#8594;</a>
                                   </span>                        
                                 </div>
                             </div>
@@ -277,24 +266,30 @@
                     
                 </div>         
             </main>
-            <div class="subscribe">
-                <div class="container">                                       
-                    <form>
-                        <span>ПОДПИСАТЬСЯ НА АКЦИИ И СПЕЦПРЕДЛОЖЕНИЯ</span>                      
-                        <span class="input-group">
-                            <span class="input-group-text" id="addon-wrapping">@</span>
-                            <input type="text" class="form-control" placeholder="Адрес электронной почты" aria-label="Username" aria-describedby="addon-wrapping">
-                            <button class="btn btn-secondary" type="button" id="button-addon2">Подписаться</button>
-                        </span>                   
-                    </form>
-                    <p>
-                        Нажимая на кнопку “Подписаться”, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с 
-                        <a href=# class="linc_form">политикой конфиденциальности.</a><br>
-                        Вы можете отписаться в любое время.
-                    </p>
-                </div>                
-            </div>    
             <footer>
+                <section class="subscribe">
+                    <div class="container">
+                        <div class="row py-5">				
+                            <div class="col-md-6">
+                                <h6>ПОДПИСАТЬСЯ НА АКЦИИ И СПЕЦПРЕДЛОЖЕНИЯ</h6>
+                                <p>
+                                    Нажимая на кнопку “Подписаться”, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с 
+                                    <a href=#> политикой конфиденциальности.</a>
+                                </p>								
+                                <p>
+                                    *Вы можете отписаться в любое время.
+                                </p>							  
+                            </div>
+                            <div class="col-md-6">                      
+                                    <span class="input-group">
+                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                        <input type="text" class="form-control" placeholder="Адрес электронной почты" aria-label="Username" aria-describedby="addon-wrapping">
+                                        <button class="btn btn-secondary" type="button" id="button-addon2">Подписаться</button>
+                                    </span>                   
+                            </div>
+                        </div>		                  
+                    </div>
+                </section>
                 <div class="container">
                  <section class="top_footer">
                      <div class = "contacts">
@@ -302,13 +297,13 @@
                              <a href="#"">super clothes</a> 
                           </div> 
                           <div>
-                            <a href="#">
+                            <a href="tel:84951111111">
                                 <i class="fas fa-phone"></i>
-                                +7 (495) 111-11-11 (Москва)
+                                8 (499) 111-11-11 (Москва)
                             </a>
-                            <a href="#">
+                            <a href="tel:88003333333">
                                 <i class="fas fa-phone"></i>
-                                +7 (800) 333-33-33 (Россия)
+                                8 (800) 333-33-33 (Россия)
                             </a>
                           </div>
                          
@@ -346,7 +341,7 @@
                                  <img src="images/icon_you.svg" alt="youtube">
                              </a>        
                              <a class="btn-social" href="#" target="_blank">
-                                 <img src="images/icon_insta.svg" alt="imstagram">
+                                 <img src="images/icon_insta.svg" alt="instagram">
                              </a>        
                              <a class="btn-social" href="#" target="_blank">
                                  <img src="images/icon_fb.svg" alt="facebook">
@@ -373,5 +368,9 @@
             </div>
         </div>
 
+        <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

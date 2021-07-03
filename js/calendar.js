@@ -36,11 +36,6 @@ function makePopup(my_year, my_month){
                 if ((y == TODAY.getDate()) && (my_year == TODAY.getFullYear()) && (my_month == TODAY.getMonth())) {
                     x += ' today';
                 }
-                if (birthday) {
-                    if ((y == birthday.getDate()) && (my_month == birthday.getMonth()) && (my_year >= birthday.getFullYear())) {
-                        x += ' birthday';
-                    }
-                }
                 if (selected_day) {
                     if((y == selected_day.getDate()) && (my_year == selected_day.getFullYear()) && (my_month == selected_day.getMonth())) {
                         x += ' selected';
@@ -55,7 +50,7 @@ function makePopup(my_year, my_month){
     
     str += '<div class="footer"></div>';
     
-    $('.modal').html(str);
+    $('.popup').html(str);
     
     $('.header span').click(function(){
         let a = my_year;
@@ -81,43 +76,16 @@ function makePopup(my_year, my_month){
         if (arr[1] < 10) arr[1] = '0' + arr[1];
         if (arr[2].length < 2) arr[2] = '0' + arr[2];
         let str = arr[2] + '-' + arr[1] + '-' + arr[0];
-        $('input').val(str);
+        $('#date').val(str);
         $('.active').removeClass('active');
-        $('.modal').empty();
+        $('.popup').empty();
     });
     
-    $('.screen').addClass('active');
+    $('.popup-desk').addClass('active');
 }
-
-$(function(){
-    $('input').mask('00-00-0000');
-    $('input, .getcalendar').click(function(){
-        if ($('input').val()) {
-            let chooseDate = $('input').val();
-            let choose_year = chooseDate.slice(6, 10);
-            let choose_month = chooseDate.substring(3, 5);
-            let choose_date = chooseDate.substr(0, 2);
-            selected_day = new Date(choose_year, choose_month - 1, choose_date);
-            makePopup(selected_day.getFullYear(),selected_day.getMonth());
-        } else {
-            makePopup(TODAY.getFullYear(),TODAY.getMonth());
-        }
-    });
-    $('button.birthday').click(function(){
-        let b = prompt('Привет! Когда у тебя день рождения? Введи в формате ДД-ММ-ГГГГ');
-        if (!/\d{2}-\d{2}-\d{4}/.test(b)) {
-            alert('Неправильный формат даты!');
-        } else {
-            let b_year = b.slice(6, 10);
-            let b_month = b.substring(3, 5);
-            let b_date = b.substr(0, 2);
-            birthday = new Date(b_year, b_month - 1, b_date);
-        }
-    });
-    $('.screen').click(function(e){
-        if ($(e.target).hasClass('active')) {
-            $('.active').removeClass('active');
-            $('.modal').empty();
-        }
-    });
-});
+function makeSelectedDate(datestring) {
+    let choose_year = datestring.slice(6, 10);
+    let choose_month = datestring.substring(3, 5);
+    let choose_date = datestring.substr(0, 2);
+    return new Date(choose_year, choose_month - 1, choose_date);
+}
