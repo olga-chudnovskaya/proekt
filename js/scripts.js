@@ -39,10 +39,6 @@ $(function(){
         }
     });
     
-    $(document).on('click', 'button[type="submit"]', function(){
-        alert('OGOGO!!!');
-    });
-    
     $(document).on('click', '.order .del > div', function(){
         tovarDelete(this);
     });
@@ -53,11 +49,7 @@ $(function(){
     
     $('#date').click(function(){
         if ($('#date').val()) {
-            let chooseDate = $('#date').val();
-            let choose_year = chooseDate.slice(6, 10);
-            let choose_month = chooseDate.substring(3, 5);
-            let choose_date = chooseDate.substr(0, 2);
-            selected_day = new Date(choose_year, choose_month - 1, choose_date);
+            selected_day = makeSelectedDate($('#date').val());
             makePopup(selected_day.getFullYear(),selected_day.getMonth());
         } else {
             makePopup(TODAY.getFullYear(),TODAY.getMonth());
@@ -66,5 +58,8 @@ $(function(){
     
     $('#date').mask('00-00-0000');
     
-    $('#privet').click(function(){alert('Привет!')});
+    $('#orderdata').on('submit', function(e){// отправка формы
+        e.preventDefault();
+        orderAction();
+    })
 });

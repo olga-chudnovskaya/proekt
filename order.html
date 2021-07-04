@@ -9,302 +9,368 @@
         <link rel="stylesheet" href="css/calendar.css">        
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                <div class="container">
-                    <div class="top_header">                        
-                        <div id="yourcity">
-                            <p>Ваш город: Москва</p>
+        <header class="container-fluid">
+            <div class="top_header container">
+                <div class=" row">
+                    <div id="yourcity" class="col">
+                        <p>Ваш город: Москва</p>
+            
                             <div class="div-popup">
-                                <div>Ваш город: Москва?</div>
-                                <button type="button" class="btn-yes">Да</button>
-                                <button type="button" class="btn-no">Нет</button>
-                            </div>
-                         </div>
-                                
-                       
-                                <a href=# class="logo">
-                                    super clothes                                 
-                                </a>
-                                       
-                        
-                        <div class="nav_menu">                        
-                            <div class="input-group search">
-                                <button class="btn-search" type="submit">
-                                    <img src="images/search.svg" alt="лупа"> 
-                                </button>
-                                <input type="search" class="form-control" placeholder="Поиск" aria-label="Search">
-                            </div>
-    
-                            <button type="button" class="login">
-                               <span>Вход </span> 
-                                <i class="fas fa-caret-down"></i>
+                            <div>Ваш город: Москва?</div>
+                            <button type="button" class="btn-yes">Да</button>
+                            <button type="button" class="btn-no">Нет</button>
+                        </div>
+
+                     </div>
+
+                    <div class="logo col">
+                        <a href=# class="logo">
+                            super clothes 
+                        </a>
+                    </div>
+
+                   <div class="nav_menu col">
+                        <div class="input-group search">
+                            <button class="btn-search" type="submit">
+                                <img src="images/search.svg" alt="лупа"> 
                             </button>
-                            <button type="button" class="like"> 
-                                <i class="far fa-heart"></i>
-                             </button>
-                             <button type="button" class="basket">                                    
+                            <input type="search" class="form-control" placeholder="Поиск" aria-label="Search">
+                        </div>
+
+                        <button type="button" class="login">
+                            <span>Вход </span> 
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <button type="button" class="like"> 
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div>
+                            <button type="button" class="basket">                                    
                                 <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
                                 <span class="basket-item">0</span>
                             </button>
-                            <div class="basket-label">В корзине 7 фламиго</div>                            
+                            <div class="basket-label">В корзине 7 фламиго</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>                    
+            
+            <div class="bottom_header container">
+                <nav class="row">
+                    <div class="menupoint col">
+                        <a href="/shop/pants" class="line-point">Брюки и джинсы</a>
+                        <div class="pulldown">
+                            <a href="/shop/sale" class="pulldown-point">Все брюки и джинсы</a>
+                            <a href="#" class="pulldown-point">Брюки чинос</a>
+                            <a href="#" class="pulldown-point">Джинсы</a>
+                            <a href="#" class="pulldown-point">Джоггеры</a>
+                            <a href="#" class="pulldown-point">Классические брюки</a>
+                            <a href="#" class="pulldown-point">Брюки больших размеров</a>
+
                         </div>
                     </div>
-                    
-                    <section class="bottom_header">
-                        <nav class="container">
-                            <div class="menupoint">
-                                <a href="/shop/new" class="line-point">Новое</a>
-                                <div class="pulldown">
-                                    <a href="/shop/sale" class="pulldown-point">Купить всё новое</a>
-                                    <a href="/shop/pants" class="pulldown-point">Брюки и джинсы</a>
-                                    <a href="/shop/shirts" class="pulldown-point">Рубашки</a>
-                                    <a href="/shop/swimwear" class="pulldown-point">Шорты и плавки</a>
-                                    <a href="/shop/suits-and-blazers" class="pulldown-point">Костюмы и блейзеры</a>
-                                    <a href="/shop/sale" class="pulldown-point">Распродажа</a>
-                                </div>
-                            </div>
-                            <div class="menupoint">
-                                <a href="/shop/pants" class="line-point">Брюки и джинсы</a>
-                                <div class="pulldown">
-                                    <a href="/shop/sale" class="pulldown-point">Все брюки и джинсы</a>
-                                    <a href="#" class="pulldown-point">Брюки чинос</a>
-                                    <a href="#" class="pulldown-point">Джинсы</a>
-                                    <a href="#" class="pulldown-point">Джоггеры</a>
-                                    <a href="#" class="pulldown-point">Классические брюки</a>
-                                    <a href="#" class="pulldown-point">Брюки больших размеров</a>
-                                    
-                                </div>
-                            </div>
-                            <div class="menupoint">
-                                <a href="/shop/shirts" class="line-point">Рубашки и футболки</a>
-                                <div class="pulldown">
-                                    <a href="/shop/sale" class="pulldown-point">Все рубашки</a>
-                                    <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
-                                    <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
-                                    <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
-                                    <a href="#" class="pulldown-point">Футболки с длинным рукавом</a>
-                                    <a href="#" class="pulldown-point">Поло</a>
-                                    <a href="#" class="pulldown-point">Рубашки больших размеров</a>
-                                </div>
-                            </div>
-                            <div class="menupoint">
-                                <a href="shop/swimwear" class="line-point">Шорты и плавки</a>
-                                <div class="pulldown">
-                                    <a href="#" class="pulldown-point">Все шорты и плавки</a>
-                                    <a href="#" class="pulldown-point">Шорты чинос</a>
-                                    <a href="#" class="pulldown-point">Повседневные шорты</a>
-                                    <a href="#" class="pulldown-point">Плавки</a>
-                                    <a href="#" class="pulldown-point">Шорты и плавки больших размеров</a>
-                                </div>
-                            </div>
-                            <div class="menupoint">
-                                <a href="/shop/suits-and-blazers" class="line-point">Костюмы и блейзеры</a>
-                                <div class="pulldown">
-                                    <a href="#" class="pulldown-point">Все костюмы и блейзеры</a>
-                                    <a href="#" class="pulldown-point">Костюмы</a>
-                                    <a href="#" class="pulldown-point">Блейзеры</a>
-                                    <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
-                                    <a href="#" class="pulldown-point">Костюмы и блейзеры больших размеров</a>
-                                </div>
-                            </div>
-                            <div class="menupoint">
-                                <a href="#" class="line-point sale">Распродажа</a>
-                                <div class="pulldown">
-                                    <a href="#" class="pulldown-point sale">Все категории</a>
-                                    <a href="#" class="pulldown-point">Рубашки и футболки</a>
-                                    <a href="#" class="pulldown-point">Брюки и джинсы</a>
-                                    <a href="#" class="pulldown-point">Шорты и плавки</a>
-                                    <a href="#" class="pulldown-point">Костюмы и блейзеры</a>
-                                    <a href="#" class="pulldown-point">Большие размеры</a>
-                                </div>
-                            </div>
-                        </nav>
-                    </section>
-                             
-                </div>
-            </header>
-
-            <main >
-                <div class="container">
-                    <h1  id="privet">Корзина</h1>
-                    <section class="order">                    
-                        <p class="nihil">Ваша корзина пуста.</p>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Наименование</th>
-                                    <th scope="col">Количество</th>
-                                    <th scope="col">Цена</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Удалить</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row" data-tovar="5711">1</th>
-                                    <td>Товар 1</td>
-                                    <td class="num">
-                                        <input type="number" value="10" pattern="^[0-9]*$">
-                                    </td>
-                                    <td class="rub">5</td>
-                                    <td class="sum">50</td>
-                                    <td class="del">
-                                        <div>+</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" data-tovar="3432">2</th>
-                                    <td>Товар 2</td>
-                                    <td class="num">
-                                        <input type="number" value="10" pattern="^[0-9]*$">
-                                    </td>
-                                    <td class="rub">10</td>
-                                    <td class="sum">100</td>
-                                    <td class="del">
-                                        <div>+</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" data-tovar="4846">3</th>
-                                    <td>Товар 3</td>
-                                    <td class="num">
-                                        <input type="number" value="10" pattern="^[0-9]*$">
-                                    </td>
-                                    <td class="rub">15</td>
-                                    <td class="sum">150</td>
-                                    <td class="del">
-                                        <div>+</div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th scope="row">Итого</th>
-                                    <td colspan="5" class="allsum">300</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-
-                        <div class="order-form">
-                            <form action="#" method="post" id="orderdata">
-                                <h3>Информация для заказа</h3>                               
-                                
-                                    <label for="name">ФИО</label>
-                                    <input type="text" placeholder="Фамилия Имя Отчество" id="name" name="user_name">
-
-                                    <label for="address">Адрес</label>
-                                    <input type="text" placeholder="Адрес" id="address" name="user_address">
-                            
-                                    
-                                    <label for="mail">E-mail</label>                                
-                                    <input type="email" placeholder="E-mail" id="email" name="user_mail">
-
-                                    <label for="date">Дата</label>                                
-                                    <input type="text" placeholder="дд.мм.гггг" id="date" name="date">
-                                
-                                    
-                                    <label for="msg">Сообщение</label>
-                                    <textarea placeholder="Ваш комментарий" id="comment" name="user_comment"></textarea>
-                            
-                                    <button type="submit" class="btn btn-dark">Отправить заказ</button>
-                            </form>
-                        </div>      
-                    </section>
-                </div>
-            </main> 
-            <footer>
-                <section class="subscribe">
-                    <div class="container">
-                        <div class="row py-5">				
-                            <div class="col-md-6">
-                                <h6>ПОДПИСАТЬСЯ НА АКЦИИ И СПЕЦПРЕДЛОЖЕНИЯ</h6>
-                                <p>
-                                    Нажимая на кнопку “Подписаться”, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с 
-                                    <a href=#> политикой конфиденциальности.</a>
-                                </p>								
-                                <p>
-                                    *Вы можете отписаться в любое время.
-                                </p>							  
-                            </div>
-                            <div class="col-md-6">                      
-                                    <span class="input-group">
-                                        <span class="input-group-text" id="addon-wrapping">@</span>
-                                        <input type="text" class="form-control" placeholder="Адрес электронной почты" aria-label="Username" aria-describedby="addon-wrapping">
-                                        <button class="btn btn-secondary" type="button" id="button-addon2">Подписаться</button>
-                                    </span>                   
-                            </div>
-                        </div>		                  
+                    <div class="menupoint col">
+                        <a href="/shop/shirts" class="line-point">Рубашки и футболки</a>
+                        <div class="pulldown">
+                            <a href="/shop/sale" class="pulldown-point">Все рубашки</a>
+                            <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
+                            <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
+                            <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
+                            <a href="#" class="pulldown-point">Футболки с длинным рукавом</a>
+                            <a href="#" class="pulldown-point">Поло</a>
+                            <a href="#" class="pulldown-point">Рубашки больших размеров</a>
+                        </div>
                     </div>
-                </section>
-                <div class="container">
-                 <section class="top_footer">
-                     <div class = "contacts">
-                         <div class="logo">
-                             <a href="#"">super clothes</a> 
-                          </div> 
-                          <div>
-                            <a href="tel:84951111111">
-                                <i class="fas fa-phone"></i>
-                                8 (499) 111-11-11 (Москва)
-                            </a>
-                            <a href="tel:88003333333">
-                                <i class="fas fa-phone"></i>
-                                8 (800) 333-33-33 (Россия)
-                            </a>
-                          </div>
-                         
-                         <a href="#">
-                             <i class="far fa-comment-dots"></i>
-                             Обратная связь
-                         </a>
-                                                                                  
-                     </div>
-                     
-                     <div>
-                         <h3>
-                             <a class="footer_linc" href="#">Сервис и помощь</a>
-                         </h3> 
-                         <a class="footer_linc" href="#">Часто задаваемые вопросы</a>
-                         <a class="footer_linc" href="#">Определение размера</a>
-                         <a class="footer_linc" href="#">Условия доставки</a>
-                         <a class="footer_linc" href="#">Обмен и возврат</a>
-                         <a class="footer_linc" href="#">Оформление заказа</a>
-                         <a class="footer_linc" href="#">Партнерская программа</a>
-                         <a class="footer_linc" href="#">Личный кабинет</a>
-                     </div>
-                     <div>
-                         <h3>
-                             <a class="footer_linc" href="#">О компании</a>
-                         </h3>                        
-                         <a class="footer_linc" href="#">Новости</a>
-                         <a class="footer_linc" href="#">Документы</a>
-                         <a class="footer_linc" href="#">Отзывы</a>
-                         <a class="footer_linc" href="#">Блог</a>
-                         <a class="footer_linc" href="#">Политика <br>конфиденциальности</a>
-                     </div>
-                     <div class="social-link">
-                             <a class="btn-social" href="#">
-                                 <img src="images/icon_you.svg" alt="youtube">
-                             </a>        
-                             <a class="btn-social" href="#" target="_blank">
-                                 <img src="images/icon_insta.svg" alt="instagram">
-                             </a>        
-                             <a class="btn-social" href="#" target="_blank">
-                                 <img src="images/icon_fb.svg" alt="facebook">
-                             </a>
-                         </div>
-                 </section>                
-                 <section class="bottom_footer">
-                     <div class="copyright">
-                         Copyright © 2002-2021 Olga Chudnovskaya. Все права защищены.
-                     </div>                        
-                 </section>
-                </div>                
-            </footer>
-        </div>
-        
+                    <div class="menupoint col">
+                        <a href="shop/swimwear" class="line-point">Шорты и плавки</a>
+                        <div class="pulldown">
+                            <a href="#" class="pulldown-point">Все шорты и плавки</a>
+                            <a href="#" class="pulldown-point">Шорты чинос</a>
+                            <a href="#" class="pulldown-point">Повседневные шорты</a>
+                            <a href="#" class="pulldown-point">Плавки</a>
+                            <a href="#" class="pulldown-point">Шорты и плавки больших размеров</a>
+                        </div>
+                    </div>
+                    <div class="menupoint col">
+                        <a href="/shop/suits-and-blazers" class="line-point">Костюмы и блейзеры</a>
+                        <div class="pulldown">
+                            <a href="#" class="pulldown-point">Все костюмы и блейзеры</a>
+                            <a href="#" class="pulldown-point">Костюмы</a>
+                            <a href="#" class="pulldown-point">Блейзеры</a>
+                            <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
+                            <a href="#" class="pulldown-point">Костюмы и блейзеры больших размеров</a>
+                        </div>
+                    </div>
+                    <div class="menupoint col">
+                        <a href="#" class="line-point sale">Распродажа</a>
+                        <div class="pulldown">
+                            <a href="#" class="pulldown-point sale">Все категории</a>
+                            <a href="#" class="pulldown-point">Рубашки и футболки</a>
+                            <a href="#" class="pulldown-point">Брюки и джинсы</a>
+                            <a href="#" class="pulldown-point">Шорты и плавки</a>
+                            <a href="#" class="pulldown-point">Костюмы и блейзеры</a>
+                            <a href="#" class="pulldown-point">Большие размеры</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <aside class="col-3">
+                        <div class="catmenu">
+                            <div class="catmenu_item">
+                                <h4>
+                                    <a href="#">Рубашки и футболки</a>
+                                </h4>
+                                <div class="submenu">
+                                    <a href="#">Рубашки с короткими рукавами</a>
+                                    <a href="#">Рубашки с длинным рукавом</a>
+                                    <a href="#">Футболки с короткими рукавами</a>
+                                    <a href="#">Футболки с длинным рукавом</a>
+                                    <a href="#">Поло</a>
+                                    <a href="#">Рубашки и футболки больших размеров</a>
+                                </div>
+                                <div class="submenu_mover">+</div>
+                            </div>
+                            <div class="catmenu_item">
+                                <h4>
+                                    <a href="#">Брюки и джинсы</a>
+                                </h4>
+                                <div class="submenu">
+                                    <a href="#">Брюки чинос</a>
+                                    <a href="#">Джинсы</a>
+                                    <a href="#">Джоггеры</a>
+                                    <a href="#">Классические брюки</a>
+                                    <a href="#">Брюки больших размеров</a>
+                                    
+                                </div>
+                                <div class="submenu_mover">+</div>
+                            </div>
+                            <div class="catmenu_item">
+                                <h4>
+                                    <a href="#">Шорты и плавки</a>
+                                </h4>
+                                <div class="submenu">
+                                    <a href="#">Шорты чинос</a>
+                                    <a href="#">Повседневные шорты</a>
+                                    <a href="#">Плавки</a>
+                                    <a href="#">Шорты и плавки больших размеров</a>
+                                </div>
+                                <div class="submenu_mover">+</div>
+                            </div>
+                            <div class="catmenu_item">
+                                <h4>
+                                    <a href="#">Костюмы и блейзеры</a>
+                                </h4>
+                                <div class="submenu">
+                                    <a href="#">Костюмы</a>
+                                    <a href="#">Блейзеры</a>
+                                    <a href="#">Костюмные брюки</a>
+                                    <a href="#">Костюмы и блейзеры больших размеров</a>
+                                </div>
+                                <div class="submenu_mover">+</div>
+                            </div>
+                            <div class="catmenu_item">
+                                <h4>
+                                    <a href="#">Большие размеры</a>
+                                </h4>
+                                <div class="submenu">
+                                    <a href="#">Брюки и джинсы</a>
+                                    <a href="#">Рубашки и футболки</a>
+                                    <a href="#">Шорты и плавки</a>
+                                    <a href="#">Костюмы и блейзеры</a>
+                                </div>
+                                <div class="submenu_mover">+</div>
+                            </div>                               
+                        </div>
+                    </aside>
+                    <div class="order col">
+                        <h1  id="privet">Корзина</h1>
+                        <div class="order">                    
+                            <p class="nihil">Ваша корзина пуста.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Наименование</th>
+                                        <th scope="col">Количество</th>
+                                        <th scope="col">Цена</th>
+                                        <th scope="col">Сумма</th>
+                                        <th scope="col">Удалить</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" data-tovar="5711">1</th>
+                                        <td>Товар 1</td>
+                                        <td class="num">
+                                            <input type="number" value="10" pattern="^[0-9]*$">
+                                        </td>
+                                        <td class="rub">5</td>
+                                        <td class="sum">50</td>
+                                        <td class="del">
+                                            <div>+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" data-tovar="3432">2</th>
+                                        <td>Товар 2</td>
+                                        <td class="num">
+                                            <input type="number" value="10" pattern="^[0-9]*$">
+                                        </td>
+                                        <td class="rub">10</td>
+                                        <td class="sum">100</td>
+                                        <td class="del">
+                                            <div>+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" data-tovar="4846">3</th>
+                                        <td>Товар 3</td>
+                                        <td class="num">
+                                            <input type="number" value="10" pattern="^[0-9]*$">
+                                        </td>
+                                        <td class="rub">15</td>
+                                        <td class="sum">150</td>
+                                        <td class="del">
+                                            <div>+</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="row">Итого</th>
+                                        <td colspan="5" class="allsum">300</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+    
+                            <div class="order-form">
+                                <form action="#" method="post" id="orderdata">
+                                    <h3>Информация для заказа</h3>                               
+                                    
+                                        <label for="name">ФИО</label>
+                                        <input type="text" placeholder="Фамилия Имя Отчество" id="name" name="user_name">
+    
+                                        <label for="address">Адрес</label>
+                                        <input type="text" placeholder="Адрес" id="address" name="user_address">
+                                
+                                        
+                                        <label for="mail">E-mail</label>                                
+                                        <input type="email" placeholder="E-mail" id="email" name="user_mail">
+    
+                                        <label for="date">Дата</label>                                
+                                        <input type="text" placeholder="дд.мм.гггг" id="date" name="date">
+                                    
+                                        
+                                        <label for="msg">Сообщение</label>
+                                        <textarea placeholder="Ваш комментарий" id="comment" name="user_comment"></textarea>
+                                
+                                        <button type="submit" class="btn btn-dark">Отправить заказ</button>
+                                </form>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+        </main> 
+        <footer class="container-fluid">
+			<section class="top_footer">
+				<div class="container">
+					<div class="row">
+						<div class = "contacts col-3">
+							<a href="#" class="logo">
+								<h2>
+									super clothes
+								</h2>
+							</a>
+							
+							<div>
+								<a href="tel:84951111111" class="phone">
+									<i class="fas fa-phone"></i>
+									8 (499) 111-11-11 (Москва)
+								</a>
+								<a href="tel:88003333333" class="phone">
+									<i class="fas fa-phone"></i>
+									8 (800) 333-33-33 (Россия)
+								</a>
+							</div>
+							<div class="chat-feedback">
+								<a href="#">
+									<i class="far fa-comment-dots"></i>
+									Обратная связь
+								</a>
+							</div>
+							<div class="social-link">
+								<a class="btn-social" href="#">
+									<img src="images/icon_you.svg" alt="youtube">
+								</a>
+								<a class="btn-social" href="#" target="_blank">
+									<img src="images/icon_insta.svg" alt="instagram">
+								</a>
+								<a class="btn-social" href="#" target="_blank">
+									<img src="images/icon_fb.svg" alt="facebook">
+								</a>
+							</div>								
+						</div>
+						<div class="col">
+							<h3>
+								<a class="footer_linc" href="#">Сервис и помощь</a>
+							</h3>
+							<a class="footer_linc" href="#">Часто задаваемые вопросы</a>
+							<a class="footer_linc" href="#">Условия доставки</a>
+							<a class="footer_linc" href="#">Обмен и возврат</a>
+							<a class="footer_linc" href="#">Оформление заказа</a>
+							<a class="footer_linc" href="#">Партнерская программа</a>
+							<a class="footer_linc" href="#">Личный кабинет</a>
+						</div>
+						<div class="col">
+							<h3>
+								<a class="footer_linc" href="#">О компании</a>
+							</h3>
+							<a class="footer_linc" href="#">Новости</a>
+							<a class="footer_linc" href="#">Документы</a>
+							<a class="footer_linc" href="#">Отзывы</a>
+							<a class="footer_linc" href="#">Блог</a>
+							<a class="footer_linc" href="#">Политика <br>конфиденциальности</a>
+						</div>
+						<div class="subscribe_b col-4">
+								<h3>Будьте первыми!</h3>
+								<p>
+									Хотите эксклюзивные предложения и первый доступ к продуктам?
+									Подпишитесь на рассылку уведомлений по электронной почте.
+								</p>
+								<div>
+									<span class="input-group">
+										<span class="input-group-text" id="addon-wrapping">@</span>
+										<input type="text" class="form-control" placeholder="Адрес электронной почты" aria-label="Username" aria-describedby="addon-wrapping">
+										<button class="btn btn-secondary" type="button" id="button-addon2">+</button>
+									</span>
+								</div>
+								<p>
+									*Нажимая на кнопку “+”, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с 
+									<a href=#> политикой конфиденциальности.</a><br>
+									Вы можете отписаться в любое время.
+								</p>
+								
+						</div>
+												
+					</div>
+				</div>			
+			</section>
+			<section class="bottom_footer">
+				 <div class="copyright">
+					Copyright © 2002-2021 Olga Chudnovskaya. Все права защищены.
+				 </div>
+			 </section>
+			</div>
+		</footer>
         <!--Popup календарь-->
         <div class="popup-desk">
             <div class="popup">

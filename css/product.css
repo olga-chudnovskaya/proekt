@@ -7,7 +7,7 @@ aside {
 	padding: 16px;
 }
 .catmenu_item {
-	padding: 0 20px 10px;
+	padding: 0 20px 0px;
 	position: relative;
 }
 .catmenu_item:before {
@@ -19,7 +19,6 @@ aside {
 	display: block;
 	color: #fff;
 	background: #9ff14280;
-	border: 1px solid #555;
 	text-decoration: none;
 	line-height: 1.5em;
 }
