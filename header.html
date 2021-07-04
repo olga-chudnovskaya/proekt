@@ -5,136 +5,137 @@
         <title>Header</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/order.css">
+        <link rel="stylesheet" href="css/calendar.css">
     </head>
     <body>
         <header class="container-fluid">
-                <div class="top_header container">
-                    <div class=" row">
-                        <div id="yourcity" class="col">
-                            <p>Ваш город: Москва</p>
-                
-                            <div class="div-popup">
-                                <div>Ваш город: Москва?</div>
-                                <button type="button" class="btn-yes">Да</button>
-                                <button type="button" class="btn-no">Нет</button>
-                            </div>
+            <div class="top_header container">
+                <div class=" row">
+                    <div id="yourcity" class="col">
+                        <p>Ваш город: Москва</p>
+            
+                            
 
-                         </div>
+                     </div>
 
-                        <div class="logo col">
-                            <a href=# class="logo">
-                                super clothes 
-                            </a>
+                    <div class="logo col">
+                        <a href="index.html" class="logo">
+                            super clothes 
+                        </a>
+                    </div>
+
+                   <div class="nav_menu col">
+                        <div class="input-group search">
+                            <button class="btn-search" type="submit">
+                                <img src="images/search.svg" alt="лупа"> 
+                            </button>
+                            <input type="search" class="form-control" placeholder="Поиск" aria-label="Search">
                         </div>
 
-                       <div class="nav_menu col">
-                            <div class="input-group search">
-                                <button class="btn-search" type="submit">
-                                    <img src="images/search.svg" alt="лупа"> 
-                                </button>
-                                <input type="search" class="form-control" placeholder="Поиск" aria-label="Search">
-                            </div>
+                        <button type="button" class="login">
+                            <span>Вход </span> 
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <button type="button" class="like"  id="privet"> 
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div>
+                            <button type="button" class="basket">                                    
+                                <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
+                                <span class="basket-item">0</span>
+                            </button>
+                            <div class="basket-label">В корзине 7 фламиго</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>                    
+            
+            <div class="bottom_header container">
+                <nav class="row">
+                    <div class="menupoint col">
+                        <a href="#" class="line-point">Все категории</a>
+                    </div>
+                    <div class="menupoint col">
+                        <a href="#" class="line-point">Брюки и джинсы</a>
+                        <div class="pulldown">
+                            <a href="#" class="pulldown-point">Все брюки и джинсы</a>
+                            <a href="#" class="pulldown-point">Брюки чинос</a>
+                            <a href="#" class="pulldown-point">Джинсы</a>
+                            <a href="#" class="pulldown-point">Джоггеры</a>
+                            <a href="#" class="pulldown-point">Классические брюки</a>
+                            <a href="#" class="pulldown-point">Брюки больших размеров</a>
 
-                            <button type="button" class="login">
-                                <span>Вход </span> 
-                                <i class="fas fa-caret-down"></i>
-                            </button>
-                            <button type="button" class="like"> 
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <div>
-                                <button type="button" class="basket">                                    
-                                    <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
-                                    <span class="basket-item">0</span>
-                                </button>
-                                <div class="basket-label">В корзине 7 фламиго</div>
-                            </div>
-                            
                         </div>
                     </div>
-                </div>                    
-                
-                <div class="bottom_header container">
-                    <nav class="row">
-                        <div class="menupoint col">
-                            <a href="/shop/pants" class="line-point">Брюки и джинсы</a>
-                            <div class="pulldown">
-                                <a href="/shop/sale" class="pulldown-point">Все брюки и джинсы</a>
-                                <a href="#" class="pulldown-point">Брюки чинос</a>
-                                <a href="#" class="pulldown-point">Джинсы</a>
-                                <a href="#" class="pulldown-point">Джоггеры</a>
-                                <a href="#" class="pulldown-point">Классические брюки</a>
-                                <a href="#" class="pulldown-point">Брюки больших размеров</a>
-
-                            </div>
+                    <div class="menupoint col">
+                        <a href="#" class="line-point">Рубашки и футболки</a>
+                        <div class="pulldown">
+                            <a href="category.html" class="pulldown-point">Все рубашки</a>
+                            <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
+                            <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
+                            <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
+                            <a href="#" class="pulldown-point">Футболки с длинным рукавом</a>
+                            <a href="#" class="pulldown-point">Поло</a>
+                            <a href="#" class="pulldown-point">Рубашки больших размеров</a>
                         </div>
-                        <div class="menupoint col">
-                            <a href="/shop/shirts" class="line-point">Рубашки и футболки</a>
-                            <div class="pulldown">
-                                <a href="/shop/sale" class="pulldown-point">Все рубашки</a>
-                                <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
-                                <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
-                                <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
-                                <a href="#" class="pulldown-point">Футболки с длинным рукавом</a>
-                                <a href="#" class="pulldown-point">Поло</a>
-                                <a href="#" class="pulldown-point">Рубашки больших размеров</a>
-                            </div>
+                    </div>
+                    <div class="menupoint col">
+                        <a href="#" class="line-point">Шорты и плавки</a>
+                        <div class="pulldown">
+                            <a href="#" class="pulldown-point">Все шорты и плавки</a>
+                            <a href="#" class="pulldown-point">Шорты чинос</a>
+                            <a href="#" class="pulldown-point">Повседневные шорты</a>
+                            <a href="#" class="pulldown-point">Плавки</a>
+                            <a href="#" class="pulldown-point">Шорты и плавки больших размеров</a>
                         </div>
-                        <div class="menupoint col">
-                            <a href="shop/swimwear" class="line-point">Шорты и плавки</a>
-                            <div class="pulldown">
-                                <a href="#" class="pulldown-point">Все шорты и плавки</a>
-                                <a href="#" class="pulldown-point">Шорты чинос</a>
-                                <a href="#" class="pulldown-point">Повседневные шорты</a>
-                                <a href="#" class="pulldown-point">Плавки</a>
-                                <a href="#" class="pulldown-point">Шорты и плавки больших размеров</a>
-                            </div>
+                    </div>
+                    <div class="menupoint col">
+                        <a href="#" class="line-point">Костюмы и блейзеры</a>
+                        <div class="pulldown">
+                            <a href="#" class="pulldown-point">Все костюмы и блейзеры</a>
+                            <a href="#" class="pulldown-point">Костюмы</a>
+                            <a href="#" class="pulldown-point">Блейзеры</a>
+                            <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
+                            <a href="#" class="pulldown-point">Костюмы и блейзеры больших размеров</a>
                         </div>
-                        <div class="menupoint col">
-                            <a href="/shop/suits-and-blazers" class="line-point">Костюмы и блейзеры</a>
-                            <div class="pulldown">
-                                <a href="#" class="pulldown-point">Все костюмы и блейзеры</a>
-                                <a href="#" class="pulldown-point">Костюмы</a>
-                                <a href="#" class="pulldown-point">Блейзеры</a>
-                                <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
-                                <a href="#" class="pulldown-point">Костюмы и блейзеры больших размеров</a>
-                            </div>
+                    </div>
+                    <div class="menupoint col">
+                        <a href="#" class="line-point sale">Распродажа</a>
+                        <div class="pulldown">
+                            <a href="#" class="pulldown-point sale">Все категории</a>
+                            <a href="#" class="pulldown-point">Рубашки и футболки</a>
+                            <a href="#" class="pulldown-point">Брюки и джинсы</a>
+                            <a href="#" class="pulldown-point">Шорты и плавки</a>
+                            <a href="#" class="pulldown-point">Костюмы и блейзеры</a>
+                            <a href="#" class="pulldown-point">Большие размеры</a>
                         </div>
-                        <div class="menupoint col">
-                            <a href="#" class="line-point sale">Распродажа</a>
-                            <div class="pulldown">
-                                <a href="#" class="pulldown-point sale">Все категории</a>
-                                <a href="#" class="pulldown-point">Рубашки и футболки</a>
-                                <a href="#" class="pulldown-point">Брюки и джинсы</a>
-                                <a href="#" class="pulldown-point">Шорты и плавки</a>
-                                <a href="#" class="pulldown-point">Костюмы и блейзеры</a>
-                                <a href="#" class="pulldown-point">Большие размеры</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-
-                         
+                    </div>
+                </nav>
             </div>
         </header>
-
-        <!--Popup-->
+        
+        <!--Popup -->
         <div class="popup-desk">
             <div class="popup">
-                <p class="popup-header">Личный кабинет</p>
-                <input type="text" name="fullname" placeholder="Логин">
-                <input type="password" name="password" placeholder="Пароль">
-                <button type="submit">Войти</button>
-                <a href="https://yandex.ru/" class="register">Зарегистрироваться</a>
+            </div>
+
+            <div class="div-popup">
             </div>
         </div>
+
+        
 
         <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
-        <script src="js/login.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/order.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/calendar.js"></script>
 
     </body>
 </html>

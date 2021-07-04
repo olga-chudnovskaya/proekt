@@ -34,14 +34,14 @@
 	padding: 1em;
 }
 .popup th {
-	height: 3em;
+	height: 2em;
 	width: 3em;
 	box-sizing: border-box;
 	border: none;
 	font-weight: bold;
 }
 .popup td {
-	height: 3em;
+	height: 2em;
 	width: 3em;
 	line-height: 1.2em;
 	box-sizing: border-box;

@@ -9,7 +9,7 @@ $(function(){
                 height: 0
             }, 1000);
             $(this).parent().addClass('open').find('.submenu').animate({
-                height: ($(this).parent().find('.submenu a').length * $('.submenu a').height())
+                height: ($(this).parent().find('.submenu a').length * $('.submenu a').outerHeight() + $('.submenu a').outerHeight())
             }, 1000);
         }
     });
