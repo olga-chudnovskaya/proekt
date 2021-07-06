@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Category</title>
+        <title>Shirts</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
         </head>
@@ -10,16 +10,13 @@
         <header class="container-fluid">
             <div class="top_header container">
                 <div class=" row">
-                    <div id="yourcity" class="col">
-                        <p>Ваш город: Москва</p>
-            
-                            <div class="div-popup">
-                            <div>Ваш город: Москва?</div>
-                            <button type="button" class="btn-yes">Да</button>
-                            <button type="button" class="btn-no">Нет</button>
-                        </div>
-
-                     </div>
+                    <div class="yourcity col" class="col">
+                        <div>Выберите город: <span id="yourcity"></span></div>            
+                        <!--<div>Ваш город: Москва?</div>
+                            <button type="button" class="btn-yes" onclick="fun1()">Да</button>
+                            <button type="button" class="btn-no" onclick="fun2()">Нет</button>
+                        </div> -->
+                    </div>
 
                     <div class="logo col">
                         <a href="index.html" class="logo">
@@ -119,7 +116,7 @@
         </header>
             <main>
                 <div class="container">
-                    <h1>Рубашки и футболки</h1>
+                    <h1>Рубашки с коротким рукавом</h1>
                     <div class="row">
                         <aside class ="col-3">
                             <div class="catmenu">
@@ -193,96 +190,17 @@
                         </aside>
                         <div class="catalog col">
                             <div class="row row-cols-1 row-cols-md-3 g-4">
-                                <div class="col">
-                                    <div class="card h-100 border-0">
-                                        <img src="images/shop/shirt_pop_2_m.jpg" class="card-img-top" alt="рубашка с попугаями">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
-                                            <p class="card-text">Бестселлер с забавным летним рисунком для насыщенного отдыха.</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Великолепные попугаи</li>
-                                            <li class="price list-group-item">3000 </li>
-                                        </ul>
-                                        <div class="card-footer">
-                                            <a href="#" class="card-link">Подробнее</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 
                                 <div class="col">
                                     <div class="card h-100 border-0">
-                                        <img src="images/shop/polo-orange.jpg" class="card-img-top" alt="Оранжевое поло">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Поло с короткими рукавами</h5>
-                                            <p class="card-text">Мягкий хлопок, создано с элементами в стиле 1960-х годов. Создаёт своеобразную атмосферу лаунджа международных шпионов у басейна.</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Оранжевый</li>
-                                            <li class="price list-group-item">3000 </li>
-                                        </ul>
-                                        <div class="card-footer">
-                                            <a href="#" class="card-link">Подробнее</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card h-100 border-0">
-                                        <img src="images/shop/longsliv.jpg" class="card-img-top" alt="Футболка со стрекозой">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Лонгслив из новой коллекции</h5>
-                                            <p class="card-text">Приходите за оригинальным дизайном. Купите ради невероятного комфорта.</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Голубой тай-дай</li>
-                                            <li class="price list-group-item">5000 </li>
-                                        </ul>
-                                        <div class="card-footer">
-                                            <a href="#" class="card-link">Подробнее</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card h-100 border-0">
-                                        <img src="images/shop/t-shirt-melon.jpg" class="card-img-top" alt="Футболка со стрекозой">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Яркая футболка с рисунком</h5>
-                                            <p class="card-text">Футболки с индивидуальностью. Количество ограничено, так что поспешите...</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Дыня с рисунком стрекоза</li>
-                                            <li class="price list-group-item">1500 </li>
-                                        </ul>
-                                        <div class="card-footer">
-                                            <a href="#" class="card-link">Подробнее</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card h-100 border-0">
-                                        <img src="images/shop/longsliv.jpg" class="card-img-top" alt="лонгслив">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Лонгслив из новой коллекции</h5>
-                                            <p class="card-text">Приходите за оригинальным дизайном. Купите ради невероятного комфорта.</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Голубой тай-дай</li>
-                                            <li class="price list-group-item">5000 </li>
-                                        </ul>
-                                        <div class="card-footer">
-                                            <a href="#" class="card-link">Подробнее</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card h-100 border-0">
-                                        <img src="images/shop/orange-shirt.jpg" class="card-img-top" alt="Футболка со стрекозой">
+                                        <img src="images/shop/shirt_1.jpg" class="card-img-top" alt="Рубашка-стрейч c коротким рукавом">
                                         <div class="card-body">
                                             <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
                                             <p class="card-text">Лёгкая рубашка яркого цвета для яркого отдыха.</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Дыня с рисунком стрекоза</li>
+                                            <li class="list-group-item">Коралл</li>
                                             <li class="price list-group-item">1500 </li>
                                         </ul>
                                         <div class="card-footer">
@@ -290,7 +208,93 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="col">
+                                    <div class="card h-100 border-0">
+                                        <img src="images/shop/shirt_tuk_1.jpg" class="card-img-top" alt="рубашка с туканами">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Рубашка свободного кроя с воротником-апаш</h5>
+                                            <p class="card-text">Бестселлер с забавным летним рисунком для насыщенного отдыха.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Туканы на бирюзовом</li>
+                                            <li class="price list-group-item">5000 </li>
+                                        </ul>
+                                        <div class="card-footer">
+                                            <a href="#" class="card-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card h-100 border-0">
+                                        <img src="images/shop/shirt_5.jpg" class="card-img-top" alt="Футболка со стрекозой">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
+                                            <p class="card-text">Лёгкая рубашка яркого цвета для яркого отдыха.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Оранжевый</li>
+                                            <li class="price list-group-item">1500 </li>
+                                        </ul>
+                                        <div class="card-footer">
+                                            <a href="#" class="card-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card h-100 border-0">
+                                        <img src="images/shop/shirt_4.jpg" class="card-img-top" alt="Футболка со стрекозой">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
+                                            <p class="card-text">Лёгкая рубашка классического цвета для спокойного отдыха.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Синий неви</li>
+                                            <li class="price list-group-item">1500 </li>
+                                        </ul>
+                                        <div class="card-footer">
+                                            <a href="#" class="card-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 
+
+                                <div class="col">
+                                    <div class="card h-100 border-0">
+                                        <img src="images/shop/shirt_6.jpg" class="card-img-top" alt="рубашка с попугаями">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Трикотажная рубашка c коротким рукавом</h5>
+                                            <p class="card-text">Бестселлер с забавным летним рисунком для насыщенного отдыха.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Рыбы на коралле</li>
+                                            <li class="cena_old price list-group-item"><span class="">3000 ₽ </span>     1500 </li>
+                                        </ul>
+                                        <div class="card-footer">
+                                            <a href="#" class="card-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col">
+                                    <div class="card h-100 border-0">
+                                        <img src="images/shop/shirt_7.jpg" class="card-img-top" alt="Рубашка-стрейч c коротким рукавомй">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
+                                            <p class="card-text">Светлая рубашка с рисунком для самых жарких дней.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Голубая клетка</li>
+                                            <li class="price list-group-item">5000 </li>
+                                        </ul>
+                                        <div class="card-footer">
+                                            <a href="#" class="card-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>                             
                         </div>
 
@@ -407,7 +411,8 @@
         <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
-        <script src="js/login.js"></script>
+        <script src="js/login.js"></script>        
+        <script src="js/sity.js"></script>
         <script src="js/scripts.js"></script>
         
     </body>

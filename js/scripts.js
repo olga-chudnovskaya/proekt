@@ -39,7 +39,7 @@ $(function(){
         }
     });
     
-    $(document).on('click', '.order .del > div', function(){
+    $(document).on('click', '.order .del > div', function(){ 
         tovarDelete(this);
     });
     

@@ -106,7 +106,7 @@ section > h2 {
 	top: 320px;
 	left: 50%;
 	margin-left: -250px;
-	width: 450px;
+	width: 400px;
 	background: #fff;
 	border-radius: 10px;
 	color: #000;
@@ -124,8 +124,12 @@ section > h2 {
 	color: #fff;
 	border-radius: 5px;
 	padding: 5px 15px;
-	width: 100%;
-	margin: 8px auto;
+	width: 80%;
+	margin: 16px 0;
+}
+.popup div {
+	display: flex;
+	justify-content: space-around;
 }
 /* header */
 header {
@@ -136,15 +140,25 @@ header {
 	height: auto;
 	padding-top: 2%;
 }
-#yourcity {
-    padding-top: 2em;
-    padding-left: 1.5em;
+.yourcity {
+	display: flex;
 	cursor: pointer;
+	line-height: 1.5em;
+	align-items: center;
+}
+#yourcity {
+    padding-left: 1.5em;
 }
 .div-popup {
 	opacity: 0;
 	display: none;
 	background: #fff;
+}
+.btn-yes,
+.btn-no {
+ display: inline-block;
+ margin: 8px 30px;
+ max-width: 30%;
 }
 .logo {
 	font-family: 'Cormorant', serif;
@@ -307,6 +321,13 @@ main {
 }
 li.price:after {
 	content: ' \20bd';
+}
+.cena_old > span {
+ text-decoration: line-through;
+ color:#555;
+}
+.cena_old {
+	color: red;
 }
 .sale_block {
 	margin-top: 60px;

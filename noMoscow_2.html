@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="кг">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="yourcity" class="col">
+            <p>Ваш город: <span id="yourcity">Москва</span></p>            
+                <div>Ваш город: Москва?</div>
+                <button type="button" class="btn-yes" onclick="fun1()">Да</button>
+                <button type="button" class="btn-no" onclick="fun2()">Нет</button>
+        </div>
+  
+
+    <script>
+        function fun1(){
+        document.querySelector('#yourcity').innerHTML = "Москва";
+        }
+        function fun2(){
+        document.querySelector('#yourcity').innerHTML = "Не Москва";
+        }
+        
+
+    </script>
+    </body>
+</html>

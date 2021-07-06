@@ -114,6 +114,9 @@ header {
 	margin: 0 0.5em;
 	align-items: center;
 }
+.yourcity:hover  {
+	cursor: pointer;
+}
 .search {	
 	max-width: 180px;
 	flex-wrap: nowrap;

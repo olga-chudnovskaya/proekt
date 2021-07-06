@@ -1,11 +1,15 @@
 $(function(){
-    $('#yourcity').click(function(){
+    $('.yourcity').click(function(){
         $('.popup-desk').addClass('active');     
-        $('.popup').html('<div>Ваш город: Москва?</div><button type="button" class="btn-yes">Да</button><button type="button" class="btn-no">Нет</button>');
+        $('.popup').html('<div>Ваш город: Москва?</div><button type="button" class="btn-yes" onclick="fun1()">Да</button><button type="button" class="btn-no" onclick="fun2()">Нет</button>');
     });
     
+    $('.like').click(function(){
+        $('.popup-desk').addClass('active');     
+        $('.popup').html('<p>Посмотреть "Избранное"</p><button type="button" class="btn-like-look">Открыть</button>');
+    });
 
-
+/*
     $('popup').on('click', '.btn-yes', function(e){
         html('Ваш город : Москва')(this);
     });
@@ -15,12 +19,7 @@ $(function(){
 
     });
 
-
-
-
-
-
-
+*/
    $('button.login').click(function(e){
         $('.popup-desk').addClass('active');
         $('.popup').html('<p class="popup-header">Личный кабинет</p><input type="text" name="fullname" placeholder="Логин"><input type="password" name="password" placeholder="Пароль"><button type="submit">Войти</button><a href="https://yandex.ru/" class="register">Зарегистрироваться</a>');

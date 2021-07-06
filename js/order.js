@@ -1,4 +1,4 @@
-const order = [
+const order = [ // массив артокулов и количества товаров
     {
         id: 5711,
         value: 10
@@ -12,24 +12,24 @@ const order = [
         value: 10
     }
 ];
-function tovarDelete(point) {
-    let b = point.parentNode.parentNode;
-    let t_id = b.querySelector('th').dataset.tovar;
-    for (let i = 0; i < order.length; i++) {
-        if (order[i].id == t_id) {
-            order.splice(i, 1);
+function tovarDelete(point) { // удаление товара, point - указатель на эл.
+    let b = point.parentNode.parentNode; // находим родителя эл. point в странице, нашли 
+    let t_id = b.querySelector('th').dataset.tovar; // dataset - в нем лежат атрибуты data объекта? в даннном случае th с кл. tovar
+    for (let i = 0; i < order.length; i++) { // счётчик цикла
+        if (order[i].id == t_id) { //
+            order.splice(i, 1); //
             console.log(t_id); // имитация отправки бэку сообщения об удалении товара
-            break;
+            break; //
         }
     }
-    b.remove();
-    if (order.length > 0) {
-        tovarCount();
-    } else {
-        orderEmpty();
+    b.remove(); // 
+    if (order.length > 0) { // 
+        tovarCount(); // 
+    } else {  // 
+        orderEmpty(); // 
     }
 }
-function tovarChange(point) {
+function tovarChange(point) { // изменение товара
     let new_quantity = point.value;
     if (new_quantity <= 0) {
         tovarDelete(point);
@@ -55,7 +55,7 @@ function tovarCount() { // пересчет товара
     }
     $('.order .table .allsum').html(itog); // кладем итог в ячейку с классом allsum
 }
-function orderEmpty() {
+function orderEmpty() { // 
     $('.order').addClass('empty');const order = [
         {
             id: 5711,
@@ -113,7 +113,7 @@ function orderEmpty() {
         }
         $('.order .table .allsum').html(itog); // кладем итог в ячейку с классом allsum
     }
-    function orderEmpty() {
+    function orderEmpty() { // очищает визуально корзину
         $('.order').addClass('empty');
     }
     function orderAction() {
