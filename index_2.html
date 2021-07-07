@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Главная</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style_cop.css">
+        <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <section class="container">
+                <div class="top_header row">
+                    <div class="nav_menu col">
+                        <div id="yourcity">
+                            <p>Ваш город: <br>
+                                Москва
+                            </p>                
+                                <div class="div-popup">
+                                <div>Ваш город: Москва?</div>
+                                <button type="button" class="btn-yes">Да</button>
+                                <button type="button" class="btn-no">Нет</button>
+                            </div>    
+                         </div>
+                        <div class="input-group search">
+                            <button class="btn-search" type="submit">
+                                <img src="images/search.svg" alt="лупа"> 
+                            </button>
+                            <input type="search" class="form-control" placeholder="Поиск" aria-label="Search">
+                        </div>
+
+                        
+                    </div>
+                        
+    
+                        <div class="logo col-6">
+                            <a href="index.html" class="logo">
+                              <p>Leto Man</p>  
+                            </a>
+                        </div>
+    
+                       <div class="nav_menu col-3">
+                               
+                            <button type="button" class="login">
+                                <span>Вход </span> 
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                            <button type="button" class="like"  id="privet"> 
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div>
+                                <button type="button" class="basket">                                    
+                                    <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
+                                    <span class="basket-item">0</span>
+                                </button>
+                                <div class="basket-label">В корзине 7 фламиго</div>
+                            </div>
+                            
+                        </div>
+                </div>                    
+                
+                <div class="bottom_header row">
+                        <div class="menupoint col">
+                            <a href="catalog.html" class="line-point">Все категории</a>
+                        </div>
+                        <div class="menupoint col">
+                            <a href="#" class="line-point">Брюки и джинсы</a>
+                            <div class="pulldown">
+                                <a href="#" class="pulldown-point">Все брюки и джинсы</a>
+                                <a href="#" class="pulldown-point">Брюки чинос</a>
+                                <a href="#" class="pulldown-point">Джинсы</a>
+                                <a href="#" class="pulldown-point">Джоггеры</a>
+                                <a href="#" class="pulldown-point">Классические брюки</a>
+                                <a href="#" class="pulldown-point">Брюки больших размеров</a>
+    
+                            </div>
+                        </div>
+                        <div class="menupoint col">
+                            <a href="#" class="line-point">Рубашки и футболки</a>
+                            <div class="pulldown">
+                                <a href="category.html" class="pulldown-point">Все рубашки</a>
+                                <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
+                                <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
+                                <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
+                                <a href="#" class="pulldown-point">Футболки с длинным рукавом</a>
+                                <a href="#" class="pulldown-point">Поло</a>
+                                <a href="#" class="pulldown-point">Рубашки больших размеров</a>
+                            </div>
+                        </div>
+                        <div class="menupoint col">
+                            <a href="#" class="line-point">Шорты и плавки</a>
+                            <div class="pulldown">
+                                <a href="#" class="pulldown-point">Все шорты и плавки</a>
+                                <a href="#" class="pulldown-point">Шорты чинос</a>
+                                <a href="#" class="pulldown-point">Повседневные шорты</a>
+                                <a href="#" class="pulldown-point">Плавки</a>
+                                <a href="#" class="pulldown-point">Шорты и плавки больших размеров</a>
+                            </div>
+                        </div>
+                        <div class="menupoint col">
+                            <a href="#" class="line-point">Костюмы и блейзеры</a>
+                            <div class="pulldown">
+                                <a href="#" class="pulldown-point">Все костюмы и блейзеры</a>
+                                <a href="#" class="pulldown-point">Костюмы</a>
+                                <a href="#" class="pulldown-point">Блейзеры</a>
+                                <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
+                                <a href="#" class="pulldown-point">Костюмы и блейзеры больших размеров</a>
+                            </div>
+                        </div>
+                        <div class="menupoint col">
+                            <a href="#" class="line-point sale">Распродажа</a>
+                            <div class="pulldown">
+                                <a href="#" class="pulldown-point sale">Все категории</a>
+                                <a href="#" class="pulldown-point">Рубашки и футболки</a>
+                                <a href="#" class="pulldown-point">Брюки и джинсы</a>
+                                <a href="#" class="pulldown-point">Шорты и плавки</a>
+                                <a href="#" class="pulldown-point">Костюмы и блейзеры</a>
+                                <a href="#" class="pulldown-point">Большие размеры</a>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            
+        </header>
+        <main class="container">
+                <div class="main_banner container">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="7000">
+                            <img src="images/extra-summer_banner_bg_1.jpg" class="d-block w-100" alt="Парни и фламинго">
+                            <div id="sl_1"class="carousel-caption d-none d-md-block">
+                                <h3>Экстра лето!</h3>
+                                <p>Сделайте лучшим своё лето с новой подхоящей одеждой</p>
+                                <button type="button" class="btn btn-dark">Купить всё самое новое</button>
+                              </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="7000">
+                            <img src="images/extra-summer_banner_bg_2.jpg" class="d-block w-100" alt="Теннисисты">
+                            <div id="sl_2" class="carousel-caption d-md-block">
+                                <h3>Летние шорты сейчас</h3>
+                                <p>Шорты для лучших летних комплектов</p>
+                                <button type="button" class="btn btn-light">Купить шорты</button>
+                            </div>
+                          </div>
+                        </div>
+                  </div>                        
+                </div>
+                <section class="most_popdilar container">
+                    <h2>Самое популярное прямо сейчас</h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/02-4x1-Swim-D.jpg" class="card-img-top" alt="Плавки">
+                                <div class="card-body">
+                                    <h5 class="card-title">Плавки &#8594;</h5>
+                                    <a href="#" class="stretched-link">Купить сейчас</a>
+                                </div>                    
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/2-4x1_Rivieras_D.jpg" class="card-img-top" alt="Рубашки с коротким рукавом">
+                                <div class="card-body">
+                                    <h5 class="card-title">Летние рубашки</h5>
+                                <a href="category.html" class="stretched-link">Купить сейчас &#8594;</a>
+                                </div>                        
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/02-4x1-Shorts-D.jpg" class="card-img-top" alt="Шорты">
+                                <div class="card-body">
+                                  <h5 class="card-title">Шорты</h5>
+                                  <a href="#" class="stretched-link">Купить сейчас  &#8594;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </section>
+                <section class="category container">
+                        <h2>Товары по категориям</h2>                    
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/Nav-Tile-Stretch.jpg" class="card-img-top" alt="Рубашки">
+                                <div class="card-body">
+                                  <h5 class="card-title">Рубашки и футболки</h5>
+                                  <a href="category.html" class="stretched-link">Купить сейчас  &#8594;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/SWC-NavTile.jpg" class="card-img-top" alt="Брюки">
+                                <div class="card-body">
+                                  <h5 class="card-title">Брюки и джинсы</h5>
+                                  <a href="#" class="stretched-link">Купить сейчас  &#8594;</a>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/swim.jpg" class="card-img-top" alt="Шорты">
+                                <div class="card-body">
+                                  <h5 class="card-title">Шорты и плавки</h5>
+                                  <a href="#" class="stretched-link">Купить сейчас &#8594;</a>
+                                </div>
+                            </div>
+                        </div>
+                          
+                          <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/Nav-Tile-Wedding-June.jpg" class="card-img-top" alt="Костюмы">
+                                <div class="card-body">
+                                  <h5 class="card-title">Костюмы и блейзеры</h5>
+                                  <a href="#" class="stretched-link">Купить сейчас  &#8594;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <section class="like_like container">
+                    <h2>Вам также может понравиться</h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/kostum_lite.jpg" class="card-img-top" alt="Cупер-легкий костюм">
+                                <span class="card-body">
+                                    <h5 class="card-title">Cупер-легкий костюм</h5>
+                                </span>
+                              <span class="text-muted card-footer">
+                                <a href="#" >Купить легкий костюм   &#8594;</a>
+                              </span>                        
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/shirts_paty.jpg" class="card-img-top" alt="Рубашки для вечеринок">
+                                <span class="card-body">
+                                    <h5 class="card-title">Рубашки для вечеринок</h5>
+                                </span>
+                              <span class="text-muted card-footer">
+                                <a href="#">Купить рубашку сейчас   &#8594;</a>
+                              </span>                        
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/polo_like.jpg" class="card-img-top" alt="летнее поло">
+                                <span class="card-body">
+                                    <h5 class="card-title">Очень летнее поло</h5>
+                                </span>
+                              <span class="text-muted card-footer">
+                                <a href="#">Купить пике-поло   &#8594;</a>
+                              </span>                        
+                            </div>
+                        </div>
+                    </div>
+                </section>                
+            </div>         
+        </main>       
+        <!-- <section class="subscribe">
+            <div class="container">
+                <div class="row py-5">				
+                    <div class="col-md-6">
+                        <h6>ПОДПИСАТЬСЯ НА АКЦИИ И СПЕЦПРЕДЛОЖЕНИЯ</h6>
+                        <p>
+                            Нажимая на кнопку “Подписаться”, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с 
+                            <a href=#> политикой конфиденциальности.</a>
+                        </p>								
+                        <p>
+                            *Вы можете отписаться в любое время.
+                        </p>							  
+                    </div>
+                    <div class="col-md-6">                      
+                            <span class="input-group">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Адрес электронной почты" aria-label="Username" aria-describedby="addon-wrapping">
+                                <button class="btn btn-secondary" type="button" id="button-addon2">Подписаться</button>
+                            </span>                   
+                    </div>
+                </div>		                  
+            </div>
+        </section> -->      
+        <footer>
+			<section class="top_footer">
+				<div class="container">
+					<div class="row">
+						<div class = "contacts col-3">
+							<a href="index.html" class="logo">
+								<h2>Leto Man</h2>
+							</a>
+							
+							<div>
+								<a href="tel:84951111111" class="phone">
+									<i class="fas fa-phone"></i>
+									8 (499) 111-11-11 (Москва)
+								</a>
+								<a href="tel:88003333333" class="phone">
+									<i class="fas fa-phone"></i>
+									8 (800) 333-33-33 (Россия)
+								</a>
+							</div>
+							<div class="chat-feedback">
+								<a href="#">
+									<i class="far fa-comment-dots"></i>
+									Обратная связь
+								</a>
+							</div>
+							<div class="social-link">
+								<a class="btn-social" href="https://www.youtube.com/">
+									<img src="images/icon_you.svg" alt="youtube">
+								</a>
+								<a class="btn-social" href="https://www.instagram.com/" target="_blank">
+									<img src="images/icon_insta.svg" alt="instagram">
+								</a>
+								<a class="btn-social" href="https://www.facebook.com/" target="_blank">
+									<img src="images/icon_fb.svg" alt="facebook">
+								</a>
+							</div>								
+						</div>
+						<div class="col">
+							<h4>
+								<a class="footer_linc" href="#">Сервис и помощь</a>
+							</h4>
+							<a class="footer_linc" href="#">Часто задаваемые вопросы</a>
+							<a class="footer_linc" href="#">Условия доставки</a>
+							<a class="footer_linc" href="#">Обмен и возврат</a>
+							<a class="footer_linc" href="#">Оформление заказа</a>
+							<a class="footer_linc" href="#">Партнерская программа</a>
+							<a class="footer_linc" href="#">Личный кабинет</a>
+						</div>
+						<div class="col">
+							<h4>
+								<a class="footer_linc" href="#">О компании</a>
+							</h4>
+                            <a class="footer_linc" href="#">Контакты</a>
+							<a class="footer_linc" href="#">Новости</a>
+							<a class="footer_linc" href="#">Документы</a>
+							<a class="footer_linc" href="#">Отзывы</a>
+							<a class="footer_linc" href="#">Блог</a>
+							<a class="footer_linc" href="#">Политика <br>конфиденциальности</a>
+						</div>
+						<div class="subscribe_b col-4">
+								<h4>Будьте первыми!</h4>
+								<p>
+									Хотите эксклюзивные предложения и первый доступ к продуктам?
+									Подпишитесь на рассылку уведомлений по электронной почте.
+								</p>
+								<div>
+									<span class="input-group">
+										<span class="input-group-text" id="addon-wrapping">@</span>
+										<input type="text" class="form-control" placeholder="Адрес электронной почты" aria-label="Username" aria-describedby="addon-wrapping">
+										<button class="btn btn-secondary" type="button" id="button-addon2">+</button>
+									</span>
+								</div>
+								<p>
+									*Нажимая на кнопку “+”, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с 
+									<a href=#> политикой конфиденциальности.</a>
+									Вы можете отписаться в любое время.
+								</p>
+								
+						</div>
+												
+					</div>
+				</div>			
+			</section>
+			<section class="bottom_footer">
+				 <div class="copyright">
+					Copyright © 2002-2021 Olga Chudnovskaya. Все права защищены.
+				 </div>
+			 </section>
+			</div>
+		</footer>
+
+        <!--Popup-->
+        <div class="popup-desk">
+            <div class="popup">
+                <p class="popup-header">Личный кабинет</p>
+                <input type="text" name="fullname" placeholder="Логин">
+                <input type="password" name="password" placeholder="Пароль">
+                <button type="submit">Войти</button>
+                <a href="https://yandex.ru/" class="register">Зарегистрироваться</a>
+            </div>
+        </div>
+
+        
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

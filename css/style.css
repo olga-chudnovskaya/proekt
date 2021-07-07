@@ -140,13 +140,13 @@ header {
 	height: auto;
 	padding-top: 2%;
 }
-.yourcity {
+#yourcity {
 	display: flex;
 	cursor: pointer;
 	line-height: 1.5em;
 	align-items: center;
 }
-#yourcity {
+#city {
     padding-left: 1.5em;
 }
 .div-popup {
@@ -224,7 +224,15 @@ div.input-group {
 	opacity: 1;
 	transition: opacity 5s ease;
 }
-
+.basket:focus,
+.x:focus {
+	box-shadow: none;
+}
+/* offcanvas*/
+.basket-offcanvas{
+	display: inline;
+	margin:  auto;
+}
 /*bottom_header */
 .bottom_header {
     margin-top: 1em;

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Product Page</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+       <!-- <link rel="stylesheet" href="css/offcanvas.css"> -->
+    </head>
+    <body>
+      <header class="container-fluid">
+        <div class="top_header container">
+            <div class=" row">
+                <div class="col" id="yourcity">
+                    <p>Выберите город: <span id="city">Москва</span></p>            
+                    <!--<div>Ваш город: Москва?</div>
+                        <button type="button" class="btn-yes" onclick="fun1()">Да</button>
+                        <button type="button" class="btn-no" onclick="fun2()">Нет</button>
+                    </div> -->
+                </div>
+
+                <div class="logo col">
+                    <a href="index.html" class="logo">
+                        super clothes 
+                    </a>
+                </div>
+
+               <div class="nav_menu col">
+                    <div class="input-group search">
+                        <button class="btn-search" type="submit">
+                            <img src="images/search.svg" alt="лупа"> 
+                        </button>
+                        <input type="search" class="form-control" placeholder="Поиск" aria-label="Search">
+                    </div>
+
+                    <button type="button" class="login">
+                        <span>Вход </span> 
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <button type="button" class="like"  id="privet"> 
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <div>
+                      <button class="btn basket" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
+                      </button>                           
+                        <div class="basket-label">В корзине 7 фламиго</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>                    
+        
+        <div class="bottom_header container">
+            <nav class="row">
+                <div class="menupoint col">
+                    <a href="#" class="line-point">Все категории</a>
+                </div>
+                <div class="menupoint col">
+                    <a href="#" class="line-point">Брюки и джинсы</a>
+                    <div class="pulldown">
+                        <a href="#" class="pulldown-point">Все брюки и джинсы</a>
+                        <a href="#" class="pulldown-point">Брюки чинос</a>
+                        <a href="#" class="pulldown-point">Джинсы</a>
+                        <a href="#" class="pulldown-point">Джоггеры</a>
+                        <a href="#" class="pulldown-point">Классические брюки</a>
+                        <a href="#" class="pulldown-point">Брюки больших размеров</a>
+
+                    </div>
+                </div>
+                <div class="menupoint col">
+                    <a href="#" class="line-point">Рубашки и футболки</a>
+                    <div class="pulldown">
+                        <a href="category.html" class="pulldown-point">Все рубашки</a>
+                        <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
+                        <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
+                        <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
+                        <a href="#" class="pulldown-point">Футболки с длинным рукавом</a>
+                        <a href="#" class="pulldown-point">Поло</a>
+                        <a href="#" class="pulldown-point">Рубашки больших размеров</a>
+                    </div>
+                </div>
+                <div class="menupoint col">
+                    <a href="#" class="line-point">Шорты и плавки</a>
+                    <div class="pulldown">
+                        <a href="#" class="pulldown-point">Все шорты и плавки</a>
+                        <a href="#" class="pulldown-point">Шорты чинос</a>
+                        <a href="#" class="pulldown-point">Повседневные шорты</a>
+                        <a href="#" class="pulldown-point">Плавки</a>
+                        <a href="#" class="pulldown-point">Шорты и плавки больших размеров</a>
+                    </div>
+                </div>
+                <div class="menupoint col">
+                    <a href="#" class="line-point">Костюмы и блейзеры</a>
+                    <div class="pulldown">
+                        <a href="#" class="pulldown-point">Все костюмы и блейзеры</a>
+                        <a href="#" class="pulldown-point">Костюмы</a>
+                        <a href="#" class="pulldown-point">Блейзеры</a>
+                        <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
+                        <a href="#" class="pulldown-point">Костюмы и блейзеры больших размеров</a>
+                    </div>
+                </div>
+                <div class="menupoint col">
+                    <a href="#" class="line-point sale">Распродажа</a>
+                    <div class="pulldown">
+                        <a href="#" class="pulldown-point sale">Все категории</a>
+                        <a href="#" class="pulldown-point">Рубашки и футболки</a>
+                        <a href="#" class="pulldown-point">Брюки и джинсы</a>
+                        <a href="#" class="pulldown-point">Шорты и плавки</a>
+                        <a href="#" class="pulldown-point">Костюмы и блейзеры</a>
+                        <a href="#" class="pulldown-point">Большие размеры</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">В вашей корзине: 
+            <span>7 фламиго</span>
+          </h5>
+          <button type="button" class="x btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+        </div>
+        <div class="col offcanvas-body">
+          <div class="ofcanvas-item">
+            <p>
+            В ашей            </p>
+            <button class="basket-offcanvas btn btn-primary">
+              <a href="order.html">Перейти в корзину</a>
+              </button>
+            </div>
+          
+          
+        </div>
+      </div>        
+        
+        <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/offcanvas.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+</html>

@@ -12,8 +12,8 @@
         <header class="container-fluid">
             <div class="top_header container">
                 <div class=" row">
-                    <div class="yourcity col" class="col">
-                        <p>Выберите город: <span id="yourcity">Москва</span></p>            
+                    <div class="col" id="yourcity">
+                        <p>Выберите город: <span id="city">Москва</span></p>            
                         <!--<div>Ваш город: Москва?</div>
                             <button type="button" class="btn-yes" onclick="fun1()">Да</button>
                             <button type="button" class="btn-no" onclick="fun2()">Нет</button>
@@ -42,10 +42,10 @@
                             <i class="far fa-heart"></i>
                         </button>
                         <div>
-                            <button type="button" class="basket">                                    
+                            <button type="button" class="btn basket" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">                                    
                                 <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
                                 <span class="basket-item">0</span>
-                            </button>
+                            </button>                            
                             <div class="basket-label">В корзине 7 фламиго</div>
                         </div>
                         
@@ -394,12 +394,23 @@
                 <a href="https://yandex.ru/" class="register">Зарегистрироваться</a>
             </div>
         </div>
+
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas снизу</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+            </div>
+            <div class="offcanvas-body small">
+              ...
+            </div>
+          </div>
+
         
         <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
         <script src="js/login.js"></script>
-        <script src="js/sity.js"></script>
+        <!--<script src="js/sity.js"></script>-->
         <script src="js/scripts.js"></script>
 
     </body>
