@@ -1,11 +1,8 @@
 
 /* order */
-.order h1 {
-	text-align: left;
-	margin: 0 0 0 2em;
-}
 .order {
-	margin: 0 2em;
+	width: 100%;
+	padding:20px;
 }
 .nihil {
 	display: none;
@@ -42,8 +39,8 @@
 
 /* form_order */
 .order-form {
-	margin: 1.5em auto;
-	padding: 1.5em;
+	margin: 0 60px;
+	padding: 20px;
     background: #ddd;
 	box-shadow: 5px 10px 15px rgba(110, 125, 134, 0.2);	
 }

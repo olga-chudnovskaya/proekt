@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Order Page</title>
+        <title>All_Shirts</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style_cop.css">
         <link rel="stylesheet" href="css/order.css">
@@ -129,7 +129,11 @@
                     </section>
                 </div>                                   
             </header>
-            <main class="container catalog">
+            <main class="container">
+                <section class="main-hed">
+                    <h1>Рубашки и футболки</h1>
+                </section>    
+                <div class="catalog">
                     <aside>
                         <div class="catmenu">
                             <div class="catmenu_item">
@@ -188,90 +192,95 @@
                             </div>                               
                         </div>
                     </aside>
-                    <section class="order"> 
-                        <h1>Корзина</h1>                   
-                        <p class="nihil">Ваша корзина пуста.</p>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Наименование</th>
-                                    <th scope="col">Количество</th>
-                                    <th scope="col">Цена</th>
-                                    <th scope="col">Сумма</th>
-                                    <th scope="col">Удалить</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row" data-tovar="5711">1</th>
-                                    <td>Товар 1</td>
-                                    <td class="num">
-                                        <input type="number" value="10" pattern="^[0-9]*$">
-                                    </td>
-                                    <td class="rub">5</td>
-                                    <td class="sum">50</td>
-                                    <td class="del">
-                                        <div>+</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" data-tovar="3432">2</th>
-                                    <td>Товар 2</td>
-                                    <td class="num">
-                                        <input type="number" value="10" pattern="^[0-9]*$">
-                                    </td>
-                                    <td class="rub">10</td>
-                                    <td class="sum">100</td>
-                                    <td class="del">
-                                        <div>+</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" data-tovar="4846">3</th>
-                                    <td>Товар 3</td>
-                                    <td class="num">
-                                        <input type="number" value="10" pattern="^[0-9]*$">
-                                    </td>
-                                    <td class="rub">15</td>
-                                    <td class="sum">150</td>
-                                    <td class="del">
-                                        <div>+</div>
-                                    </td>
-                                </tr>                                        
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th scope="row">Итого</th>
-                                    <td colspan="5" class="allsum">300</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                        <div class="order-form">
-                            <form action="#" method="post" id="orderdata">
-                                <h3>Информация для заказа</h3>                               
-                                
-                                    <label for="name">ФИО</label>
-                                    <input type="text" placeholder="Фамилия Имя Отчество" id="name" name="user_name" autocomplete="off">
-    
-                                    <label for="address">Адрес</label>
-                                    <input type="text" placeholder="Адрес" id="address" name="user_address" autocomplete="off">
-                            
-                                    
-                                    <label for="mail">E-mail</label>                                
-                                    <input type="email" placeholder="E-mail" id="email" name="user_mail" autocomplete="off">
-    
-                                    <label for="date">Дата</label>                                
-                                    <input type="text" placeholder="дд.мм.гггг" id="date" name="date" autocomplete="off">
-                                
-                                    
-                                    <label for="msg">Сообщение</label>
-                                    <textarea placeholder="Ваш комментарий" id="comment" name="user_comment"></textarea>
-                            
-                                    <button type="submit" class="btn btn-dark">Отправить заказ</button>
-                            </form>
+                    <div class="row cat-blocks">
+                        <div class="card">
+                            <img src="images/shop/shirt_pop_2_m.jpg" class="card-img-top" alt="рубашка с попугаями">
+                            <div class="card-body">
+                                <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
+                                <p class="card-text">Бестселлер с забавным летним рисунком для насыщенного отдыха.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Великолепные попугаи</li>
+                                <li class="price list-group-item">3000 </li>
+                            </ul>
+                            <div class="card-footer">
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
+                        </div>                             
+                        <div class="card">
+                            <img src="images/shop/polo-orange.jpg" class="card-img-top" alt="Оранжевое поло">
+                            <div class="card-body">
+                                <h5 class="card-title">Поло с короткими рукавами</h5>
+                                <p class="card-text">Мягкий хлопок, создано с элементами в стиле 1960-х годов. Создаёт своеобразную атмосферу лаунджа международных шпионов у басейна.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Оранжевый</li>
+                                <li class="price list-group-item">3000 </li>
+                            </ul>
+                            <div class="card-footer">
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
+                        </div>                            
+                        <div class="card">
+                            <img src="images/shop/longsliv.jpg" class="card-img-top" alt="Футболка со стрекозой">
+                            <div class="card-body">
+                                <h5 class="card-title">Лонгслив из новой коллекции</h5>
+                                <p class="card-text">Приходите за оригинальным дизайном. Купите ради невероятного комфорта.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Голубой тай-дай</li>
+                                <li class="price list-group-item">5000 </li>
+                            </ul>
+                            <div class="card-footer">
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
+                        </div>                            
+                        <div class="card">
+                            <img src="images/shop/longsliv_j.jpg" class="card-img" alt="Рубашка-стрейч c коротким рукавом">
+                            <div class="card-body">
+                                <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
+                                <p class="card-text">Лёгкая рубашка яркого цвета для яркого отдыха.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Коралл</li>
+                                <li class="price list-group-item">1500 </li>
+                            </ul>
+                            <div class="card-footer">
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
+                        </div>                            
+                        <div class="card">
+                            <img src="images/shop/polo_1.jpg" class="card-img-top" alt="лонгслив">
+                            <div class="card-body">
+                                <h5 class="card-title">Поло из пике</h5>
+                                <p class="card-text">Эластичный хлопок поможет вам расслабиться везде, от поле для гольфа до летнего ужина.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Морская волна</li>
+                                <li class="price list-group-item">5000 </li>
+                            </ul>
+                            <div class="card-footer">
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
+                        </div>                            
+                        <div class="card">
+                            <img src="images/shop/shirt_8.jpg" class="card-img-top" alt="Футболка со стрекозой">
+                            <div class="card-body">
+                                <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
+                                <p class="card-text">Лёгкая рубашка яркого цвета для яркого отдыха.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Дыня</li>
+                                <li class="price list-group-item">1500 </li>
+                            </ul>
+                            <div class="card-footer">
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
                         </div>
-                    </section>
+                    </div>                   
+                                                            
+                </div> 
+                    
                                                                   
             </main> 
             <footer>
