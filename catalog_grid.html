@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style_cop.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container-grid {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .grid-container div {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }   
+        .grid-container {
+                max-width: 100%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 170px;
+                grid-gap: 10px;
+                grid-auto-flow: dense;
+            }
+            
+            .item1 {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+            .item2 {
+                grid-column: span 1;
+                grid-row: span 3;
+            }
+            .item3 {
+                grid-column: span 1;
+                grid-row: span 4;
+            }
+            .item4 {
+                grid-column: span 1;
+                grid-row: span 4;
+            }
+            .item5 {
+                grid-column: span 1;
+                grid-row: span 3;
+            }
+            </style>
+            
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-grid">
+        <div class="grid-container">
+            <div class="item1">
+                <div class="card sale-block">
+                    <a href="#">
+                        <div class="sale_block">
+                            <h2>Распродажа %</h2>                                   
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="item2">
+                <div class="card">
+                    <img src="images/shirts_copi.jpg" class="card-img-top" alt="рубашки"> 
+                    <a href="category.html" class="stretched-link">
+                        <h5 class="card-title">Рубашки и футболки   &#8594;</h5>
+                    </a>
+                </div>     
+            </div>
+            <div class="item3">
+                <div class="card">
+                    <img src="images/jeans.jpg" class="card-img-top" alt="джинсы">
+                    <a href="#" class="stretched-link">
+                        <h5 class="card-title">Брюки и джинсы  &#8594;</h5> 
+                    </a>
+                </div>
+            </div>
+            <div class="item4">
+                <div class="card">
+                    <img src="images/siits_catalog.jpg" class="card-img-top" alt="Шорты">
+                    <a href="#" class="stretched-link">
+                        <h5 class="card-title">Костюмы и блейзеры &#8594;</h5>  
+                    </a>
+                </div>    
+            </div>
+            <div class="item5">
+                <div class="card">
+                    <img src="images/shorts_copi.jpg" class="card-img-top" alt="Шорты">
+                    <a href="#" class="stretched-link">
+                        <h5 class="card-title">Шорты и плавки  &#8594;</h5>
+                    </a>
+                </div>    
+            </div>
+            
+         </div>
+    </div>
+        <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -7,7 +7,7 @@ html {
 	margin: 0;
 	font: normal 16px Montserrat, sans-serif;
 	min-width: 320px;
-	background: url('../images/background/tropical-2.jpg') left top repeat;
+	background: url('../images/bg-page-tropical.jpg') left top repeat;
 	background-size: cover;
 	color: #000;
 }
@@ -15,6 +15,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	
 }
 a {
     text-decoration: none;
@@ -64,12 +65,10 @@ button {
 section {
 	display: flex;
 	flex-direction: column;
-}
-section, aside {
-	background:rgba(87, 240, 207, 0.4);
-	border: #ddd solid 1px;
 	margin: 0;
 	padding: 20px;
+
+	border: rgb(141, 70, 70) solid 1px;	
 }
 section > h2 {
 	padding: 30px;
@@ -102,9 +101,6 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: nowrap;
-}
-.top_header:first-child {
-
 }
 #yourcity {
 	font-size: 0.75em;
@@ -150,7 +146,7 @@ header {
 	align-items: center;
 }
 .search {	
-	max-width: 180px;
+	max-width: 150px;
 	flex-wrap: nowrap;
 }
 button.btn-search {
@@ -247,10 +243,9 @@ div.input-group {
 }
 /* main */
 main{
-	margin: 0 0 20px 0;
-	padding: 0;
 	flex: 1 1 auto;
-	background: #fff;
+	background-color:#ffffff;
+	padding: 30px 0;
 }
 /* banner */
 .main_banner {
@@ -288,20 +283,20 @@ aside {
 	flex: none;
 	display: none;
 	width: 100px;
+	background: #fff;
+	padding: 10px;
 }
 .catmenu {	
 	padding: 16px 0;
 }
 .catmenu_item {
-	padding-bottom: 15px;
+	padding: 0 20px 8px;
 	position: relative;
 }
 .catmenu_item a {
 	padding-bottom: 8px;
 }
-.catmenu_item:first-child {
-	font-weight: 500;
-}
+
 .catmenu_item a:hover {
 	font-weight: 600;
 }
@@ -309,6 +304,8 @@ aside {
 	position: absolute;
 	right: 0;
 	top: 0;
+	font-size: 1.5em;
+	font-weight: 500;
 	cursor: pointer;
 	transition: all 1s ease;
 }
@@ -335,19 +332,15 @@ aside {
 	padding-left: 1em;
 }
 /* catalog */
+
 .catalog {
 	display: flex;
-}
-.cat-blocks {
-	padding: 0 20px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	padding: 30px 0;
 }
 .card {
 	display: flex;
-	padding: 8px;
-	width: 49%;
+	padding: 16px;
+	width: 100%;
 	background: #fff;
 	border: none;
 	border-radius: 0;	
@@ -368,14 +361,14 @@ li.price:after {
 .cena_old {
 	color: red;
 }
-.sale-block {
-	display: flex;
-	flex-direction: row;
-	height: 100px;
-	justify-content: center;
-	text-align: center;
+.sale-block {	
 	background: #f88484;
+}
+.sale-block h2 {
 	color: #fff;
+	font-size: 4em;
+	text-align: center;
+	padding-top: 20px;
 }
 /* product */
 .product-title {
@@ -482,7 +475,7 @@ button.sizes {
 footer {
 	flex: 0 0 auto;
 	background: black;
-	color: white;
+	color: white;	
 	padding-bottom: 20px;
 }
 footer > section {
@@ -492,8 +485,7 @@ footer > section {
 	padding-bottom: 0.5em;
 }
 .top_footer{
-	margin-top: 0;
-	padding-top: 2em;
+	padding:  20px 20px 0;
 	height: auto;
 	/*text-align: center;*/
 }
@@ -600,7 +592,7 @@ a.phone {
 }
  /* different screens */
 @media (min-width: 576px) {
-		
+	
 
 @media (min-width: 768px) {
 	body {
@@ -609,12 +601,15 @@ a.phone {
 	aside {
 		display: none;
 	}
-	
+
+	.card {
+		width: 50%;
+	}
 	
 }
 @media (min-width: 992px) {
 	.card {
-		width: 32%;
+		width: 33%;
 	}
 	aside {
 		display: block;
