@@ -78,12 +78,13 @@
 	display: flex;
 	justify-content: space-between;
 	background: powderblue;
-	padding-top: 2em;
+	padding: 30px 0;
 }
 .popup .header span {
 	display: block;	
-	height: 2em;
-	width: 2em;
+	height: 30px;
+	width: 30px;
+	padding-bottom: 15px;
 	
 	cursor: pointer;
 	font-size: 2em;

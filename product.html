@@ -3,37 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <title>Product Page</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,600;1,400&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;1,100;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style.css">
-        <!--<link rel="stylesheet" href="css/product.css">-->
     </head>
     <body>
         <header class="container-fluid">
-            <div class="top_header container">
-                <div class=" row">
-                    <div class="col" id="yourcity">
-                        <p>Выберите город: <span id="city">Москва</span></p>            
-                        <!--<div>Ваш город: Москва?</div>
-                            <button type="button" class="btn-yes" onclick="fun1()">Да</button>
-                            <button type="button" class="btn-no" onclick="fun2()">Нет</button>
-                        </div> -->
-                    </div>
-
-                    <div class="logo col">
-                        <a href="index.html" class="logo">
-                            super clothes 
-                        </a>
-                    </div>
-
-                   <div class="nav_menu col">
-                        <div class="input-group search">
-                            <button class="btn-search" type="submit">
+            <div class="container">
+                <section class="top_header">
+                    <div class="nav_menu">
+                        <div id="yourcity">
+                            <p>Ваш город: <span id="sity"> Москва? </span></p>
+                        </div>
+                        <div class="search">
+                            <button type="search"class="btn-search" type="submit">
                                 <img src="images/search.svg" alt="лупа"> 
                             </button>
-                            <input type="search" class="form-control" placeholder="Поиск" aria-label="Search">
-                        </div>
-
+                        </div>                       
+                    </div>
+                    <div class="logo">
+                        <a href="index.html" class="logo">
+                          <img src="images/logo_LETO_Man.svg" alt="логотип">
+                        </a>
+                    </div>                      
+                    <div class="nav_menu">                               
                         <button type="button" class="login">
                             <span>Вход </span> 
                             <i class="fas fa-caret-down"></i>
@@ -42,347 +38,324 @@
                             <i class="far fa-heart"></i>
                         </button>
                         <div>
-                            <button type="button" class="btn basket" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">                                    
-                                <img src="images/bootstrap-icons-1.5.0/bag.svg" alt="корзина">
-                                <span class="basket-item">0</span>
-                            </button>                            
-                            <div class="basket-label">В корзине 7 фламиго</div>
+                            <button class="btn basket" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                              <img src="images/bag.svg" alt="корзина">
+                              <span class="basket-item">6</span>
+                            </button>                           
+                              <div class="basket-label">В корзине 6 товаров</div>
+                          </div>                            
+                    </div>
+                </section>
+                <section>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <div class="bottom_header_catalog">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-lg-0">
+                              <li class="nav-item">
+                                <div class="menupoint">
+                                    <a href="catalog.html" class="line-point">Каталог</a>
+                                </div>
+                              </li>
+                              <li class="nav-item">
+                                <div class="menupoint">
+                                    <a href="#" class="line-point">Брюки и джинсы</a>
+                                    <div class="pulldown">
+                                        <a href="#" class="pulldown-point">Все брюки и джинсы</a>
+                                        <a href="#" class="pulldown-point">Брюки чинос</a>
+                                        <a href="#" class="pulldown-point">Джинсы</a>
+                                        <a href="#" class="pulldown-point">Джоггеры</a>
+                                        <a href="#" class="pulldown-point">Классические брюки</a>
+                                        <a href="#" class="pulldown-point">Брюки больших размеров</a>
+            
+                                    </div>
+                                </div>
+                              </li>
+                              <li class="nav-item">
+                                <div class="menupoint">
+                                    <a href="#" class="line-point">Рубашки и футболки</a>
+                                    <div class="pulldown">
+                                        <a href="category.html" class="pulldown-point">Все рубашки и футболки</a>
+                                        <a href="subcategory.html" class="pulldown-point">Рубашки с коротким рукавом</a>
+                                        <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
+                                        <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
+                                        <a href="#" class="pulldown-point">Футболки с длинным рукавом</a>
+                                        <a href="#" class="pulldown-point">Поло</a>
+                                        <a href="#" class="pulldown-point">Рубашки больших размеров</a>
+                                    </div>
+                                </div>
+                              </li>
+                              <li class="nav-item">
+                                <div class="menupoint">
+                                    <a href="#" class="line-point">Шорты и плавки</a>
+                                    <div class="pulldown">
+                                        <a href="#" class="pulldown-point">Все шорты и плавки</a>
+                                        <a href="#" class="pulldown-point">Шорты чинос</a>
+                                        <a href="#" class="pulldown-point">Повседневные шорты</a>
+                                        <a href="#" class="pulldown-point">Плавки</a>
+                                        <a href="#" class="pulldown-point">Шорты и плавки больших размеров</a>
+                                    </div>
+                                </div>
+                              </li>
+                              <li class="nav-item">
+                                <div class="menupoint">
+                                    <a href="#" class="line-point">Костюмы и блейзеры</a>
+                                    <div class="pulldown">
+                                        <a href="#" class="pulldown-point">Все костюмы и блейзеры</a>
+                                        <a href="#" class="pulldown-point">Костюмы</a>
+                                        <a href="#" class="pulldown-point">Блейзеры</a>
+                                        <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
+                                        <a href="#" class="pulldown-point">Костюмы и блейзеры больших размеров</a>
+                                    </div>
+                                </div>
+                              </li>
+                              <li class="nav-item">
+                                <div class="menupoint">
+                                    <a href="#" class="line-point sale">Распродажа</a>
+                                    <div class="pulldown">
+                                        <a href="#" class="pulldown-point sale">Все категории</a>
+                                        <a href="#" class="pulldown-point">Рубашки и футболки</a>
+                                        <a href="#" class="pulldown-point">Брюки и джинсы</a>
+                                        <a href="#" class="pulldown-point">Шорты и плавки</a>
+                                        <a href="#" class="pulldown-point">Костюмы и блейзеры</a>
+                                        <a href="#" class="pulldown-point">Большие размеры</a>
+                                    </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </section>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h4 id="offcanvasRightLabel">В вашей корзине: <br>
+                    <span>6 товаров</span>
+                  </h4>
+                  <button type="button" class="x btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                </div>
+                <div class="col offcanvas-body">
+                  <div class="ofcanvas-item">
+                    <p>
+                        На сумму 15500 ₽ 
+                    </p>
+                    <button class="basket-offcanvas btn btn-secondary">
+                      <a href="order.html">Перейти в корзину</a>
+                      </button>
+                    </div>            
+                </div>
+            </div>                                   
+        </header> 
+        <main class="container catalog">
+            <aside>
+                <div class="catmenu">
+                    <div class="catmenu_item">
+                        <a href="#">Рубашки и футболки</a>
+                        <div class="submenu">
+                            <a href="subcategory.html" class="pulldown-point">Рубашки с коротким рукавом</a>
+                            <a href="#">Рубашки с длинным рукавом</a>
+                            <a href="#">Поло</a>
+                            <a href="#">Футболки с короткими рукавами</a>
+                            <a href="#">Футболки с длинным рукавом</a>
+                        </div>
+                        <div class="submenu_mover">+</div>
+                    </div>
+                    <div class="catmenu_item">
+                        <a href="#">Брюки и джинсы</a>
+                        <div class="submenu">
+                            <a href="#">Брюки чинос</a>
+                            <a href="#">Джинсы</a>
+                            <a href="#">Джоггеры</a>
+                            <a href="#">Классические брюки</a>                                                                    
+                        </div>
+                        <div class="submenu_mover">+</div>
+                    </div>
+                    <div class="catmenu_item">
+                        <a href="#">Шорты и плавки</a>
+                        <div class="submenu">
+                            <a href="#">Шорты чинос</a>
+                            <a href="#">Повседневные шорты</a>
+                            <a href="#">Плавки</a>                                    
+                        </div>
+                        <div class="submenu_mover">+</div>
+                    </div>
+                    <div class="catmenu_item">
+                        <a href="#">Костюмы и блейзеры</a>
+                        <div class="submenu">
+                            <a href="#">Костюмы</a>
+                            <a href="#">Блейзеры</a>
+                            <a href="#">Костюмные брюки</a>
+                            
+                        </div>
+                        <div class="submenu_mover">+</div>
+                    </div>
+                    <div class="catmenu_item">
+                        <a href="#" class="catmenu-head">Большие размеры</a>    
+                        <div class="submenu">
+                            <a href="#">Брюки и джинсы</a>
+                            <a href="#">Рубашки и футболки</a>
+                            <a href="#">Шорты и плавки</a>
+                            <a href="#">Костюмы и блейзеры</a>
+                        </div>
+                        <div class="submenu_mover">+</div>
+                    </div>                               
+                </div>
+            </aside>                          
+                <div class="product row">
+                    <div class="image-product col">
+                            <div class="gallery">
+                                <div class="small-image">
+                                    <img src="images/orange-shirt-1-min.jpg" alt="рубашка c коротким рукавом мини-1">
+                                </div>
+                                <div class="small-image">
+                                    <img src="images/orange-shirt-2-min.jpg" alt="рубашка c коротким рукавом мини-2">
+                                </div>
+                                <div class="small-image">
+                                    <img src="images/orange-shirt-3-min.jpg" alt="рубашка c коротким рукавом мини-3">
+                                </div>
+                                <div class="small-image">
+                                    <img src="images/orange-shirt-4-min.jpg" alt="рубашка c коротким рукавом мини-4">
+                                </div>
+                            </div>
+                            <div class="gallery-desk">
+                                <div class="main-image">
+                                    <img src="images/orange-shirt-1-midl.jpg" alt="рубашка c коротким рукавом">
+                                </div>  
+                            </div>
+                                                               
+                    </div>
+                    <div class="product-item col">
+                        <h1 class="product-title">Рубашка c коротким рукавом стрейч</h1>
+                        <div class="product-description">
+                            Мягкий хлопок, создано с элементами в стиле 1960-х годов.
+                             Создаёт своеобразную атмосферу лаунджа международных шпионов у басейна.
+                        </div>
+                        <div class="product-color">
+                            <span>Цвет: </span>
+                            <span class="product-color">оранжевый</span>
+                        </div>
+                        <div class="prod-price">3000 </div>
+                        <!-- Таблица размеров -->
+                        <div class="product-detals product-size row"> 
+                            <div class="col">Ваш размер</div>
+                            <div class="col">
+                                <a href="#" class="product-size">Таблица размеров</a>   
+                            </div>
+                        </div>
+                        <div class="btn-size">
+                            <button class="sizes">SX</button>
+                            <button class="sizes">S</button>
+                            <button class="sizes">M</button>
+                            <button class="sizes">L</button>
+                            <button class="sizes">XL</button>
+                            <button class="sizes">XXL</button>
                         </div>
                         
+                        <button class="btn btn-dark btn-basket-add" type="button">
+                            Добавить в корзину
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-like-add">
+                            Добавить в избранное
+                        </button>
+                        <div class="product-detals">
+                        <a href="#">Детали +</a> Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали
+                        </div>
+                        <div class="product-detals">
+                            <a href="">Состав и уход за изделием +</a> Состав и уход за изделием Состав и уход за изделием Состав и уход за изделием Состав и уход за изделием
+                        </div>
                     </div>
-                </div>
-            </div>                    
-            
-            <div class="bottom_header container">
-                <nav class="row">
-                    <div class="menupoint col">
-                        <a href="#" class="line-point">Все категории</a>
-                    </div>
-                    <div class="menupoint col">
-                        <a href="#" class="line-point">Брюки и джинсы</a>
-                        <div class="pulldown">
-                            <a href="#" class="pulldown-point">Все брюки и джинсы</a>
-                            <a href="#" class="pulldown-point">Брюки чинос</a>
-                            <a href="#" class="pulldown-point">Джинсы</a>
-                            <a href="#" class="pulldown-point">Джоггеры</a>
-                            <a href="#" class="pulldown-point">Классические брюки</a>
-                            <a href="#" class="pulldown-point">Брюки больших размеров</a>
+                    
 
-                        </div>
-                    </div>
-                    <div class="menupoint col">
-                        <a href="#" class="line-point">Рубашки и футболки</a>
-                        <div class="pulldown">
-                            <a href="category.html" class="pulldown-point">Все рубашки</a>
-                            <a href="#" class="pulldown-point">Рубашки с коротким рукавом</a>
-                            <a href="#" class="pulldown-point">Рубашки с длинным рукавом</a>
-                            <a href="#" class="pulldown-point">Футболки с короткими рукавами</a>
-                            <a href="#" class="pulldown-point">Футболки с длинным рукавом</a>
-                            <a href="#" class="pulldown-point">Поло</a>
-                            <a href="#" class="pulldown-point">Рубашки больших размеров</a>
-                        </div>
-                    </div>
-                    <div class="menupoint col">
-                        <a href="#" class="line-point">Шорты и плавки</a>
-                        <div class="pulldown">
-                            <a href="#" class="pulldown-point">Все шорты и плавки</a>
-                            <a href="#" class="pulldown-point">Шорты чинос</a>
-                            <a href="#" class="pulldown-point">Повседневные шорты</a>
-                            <a href="#" class="pulldown-point">Плавки</a>
-                            <a href="#" class="pulldown-point">Шорты и плавки больших размеров</a>
-                        </div>
-                    </div>
-                    <div class="menupoint col">
-                        <a href="#" class="line-point">Костюмы и блейзеры</a>
-                        <div class="pulldown">
-                            <a href="#" class="pulldown-point">Все костюмы и блейзеры</a>
-                            <a href="#" class="pulldown-point">Костюмы</a>
-                            <a href="#" class="pulldown-point">Блейзеры</a>
-                            <a href="#" class="pulldown-point">Костюмные брюки</a>                                    
-                            <a href="#" class="pulldown-point">Костюмы и блейзеры больших размеров</a>
-                        </div>
-                    </div>
-                    <div class="menupoint col">
-                        <a href="#" class="line-point sale">Распродажа</a>
-                        <div class="pulldown">
-                            <a href="#" class="pulldown-point sale">Все категории</a>
-                            <a href="#" class="pulldown-point">Рубашки и футболки</a>
-                            <a href="#" class="pulldown-point">Брюки и джинсы</a>
-                            <a href="#" class="pulldown-point">Шорты и плавки</a>
-                            <a href="#" class="pulldown-point">Костюмы и блейзеры</a>
-                            <a href="#" class="pulldown-point">Большие размеры</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="container">
-                <div class="row">
-                    <aside class ="col-3">
-                        <div class="catmenu">
-                            <div class="catmenu_item">
-                                <h4>
-                                    <a href="#">Рубашки и футболки</a>
-                                </h4>
-                                <div class="submenu">
-                                    <a href="category.html">Все рубашки и футболки</a>
-                                    <a href="#">Рубашки с короткими рукавами</a>
-                                    <a href="#">Рубашки с длинным рукавом</a>
-                                    <a href="#">Поло</a>
-                                    <a href="#">Футболки с короткими рукавами</a>
-                                    <a href="#">Футболки с длинным рукавом</a>                                   
-                                    
-                                </div>
-                                <div class="submenu_mover">+</div>
-                            </div>
-                            <div class="catmenu_item">
-                                <h4>
-                                    <a href="#">Брюки и джинсы</a>
-                                </h4>
-                                <div class="submenu">
-                                    <a href="#">Все брюки и джинсы</a>
-                                    <a href="#">Брюки чинос</a>
-                                    <a href="#">Джинсы</a>
-                                    <a href="#">Джоггеры</a>
-                                    <a href="#">Классические брюки</a>                                        
-                                </div>
-                                <div class="submenu_mover">+</div>
-                            </div>
-                            <div class="catmenu_item">
-                                <h4>
-                                    <a href="#">Шорты и плавки</a>
-                                </h4>
-                                <div class="submenu">
-                                    <a href="#">Все шорты и плавки</a>
-                                    <a href="#">Шорты чинос</a>
-                                    <a href="#">Повседневные шорты</a>
-                                    <a href="#">Плавки</a>
-                                    
-                                </div>
-                                <div class="submenu_mover">+</div>
-                            </div>
-                            <div class="catmenu_item">
-                                <h4>
-                                    <a href="#">Костюмы и блейзеры</a>
-                                </h4>
-                                <div class="submenu">
-                                    <a href="#">Все костюмы и блейзеры</a>
-                                    <a href="#">Костюмы</a>
-                                    <a href="#">Блейзеры</a>
-                                    <a href="#">Костюмные брюки</a>
-                                    
-                                </div>
-                                <div class="submenu_mover">+</div>
-                            </div>
-                            <div class="catmenu_item">
-                                <h4>
-                                    <a href="#">Большие размеры</a>
-                                </h4>
-                                <div class="submenu">
-                                    <a href="#">Брюки и джинсы</a>
-                                    <a href="#">Рубашки и футболки</a>
-                                    <a href="#">Шорты и плавки</a>
-                                    <a href="#">Костюмы и блейзеры</a>
-                                </div>
-                                <div class="submenu_mover">+</div>
-                            </div>
-                        </div>
-                    </aside>                     
-                    <div class="product-cart col">
-                        <div class="row">
-                            <div class="img_min_block col-1 ">
-                                <div class="img_min">
-                                    <img src="images/product/SHIRT_1_min.jpg" alt="рубашка c коротким рукавом миниатюра">
-                                </div>
-                                <div class="img_min">
-                                    <img src="images/product/SHIRT_2_min.jpg" alt="рубашка c коротким рукавом миниатюра">
-                                </div>
-                                <div class="img_min">
-                                    <img src="images/product/SHIRT_3_min.jpg" alt="рубашка c коротким рукавом миниатюра">
-                                </div>
-                                <div class="img_min">
-                                    <img src="images/product/SHIRT_4_min.jpg" alt="рубашка c коротким рукавом миниатюра">
-                                </div>                     
-                            </div>
-                            <div class="col">
-                                    <div class="card_prod">
-                                        <img src="images/product/SHIRT_1.jpg" alt="рубашка c коротким рукавом">
-                                    </div>
-                            </div>
-
-                            <div class="product-item col">
-                                <h1 class="product-title">Рубашка c коротким рукавом стрейч</h1>
-                                <p class="product-text">Мягкий хлопок, создано с элементами в стиле 1960-х годов. Создаёт своеобразную атмосферу лаунджа международных шпионов у басейна.</p>
-                                <div class="color_prod">
-                                    <span>Цвет: </span>
-                                    <span class="color_prod">оранжевый</span>
-                                </div>
-                                <div class="prod-price">3000 </div>
-                                <div class="product-size">                                
-                                <a href="#">Таблица размеров +</a> 
-                                </div>
-                                <button class="sizes">SX</button>
-                                <button class="sizes">S</button>
-                                <button class="sizes">M</button>
-                                <button class="sizes">L</button>
-                                <button class="sizes">XL</button>
-                                <button class="sizes">XXL</button>
-                                <button class="btn btn-dark btn-basket-add" type="button">
-                                    Добавить в корзину
-                                </button>
-                                <button type="button" class="btn btn-outline-secondary btn-like-add">
-                                    Добавить в избранное
-                                </button>
-                                <div class="product-detals">
-                                <a href="#">Детали +</a> Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали Детали
-                                </div>
-                                <div class="product-detals">
-                                    <a href="">Состав и уход за изделием +</a> Состав и уход за изделием Состав и уход за изделием Состав и уход за изделием Состав и уход за изделием
-                                </div>
-                            </div>                            
-                        </div>     
-                    </div> 
-                </div>
-            </div>  
+                          
+                </div>                     
         </main>     
         <footer class="container-fluid">
-			<section class="top_footer">
-				<div class="container">
-					<div class="row">
-						<div class = "contacts col-3">
-							<a href="index.html" class="logo">
-								<h2>
-									super clothes
-								</h2>
-							</a>
-							
-							<div>
-								<a href="tel:84951111111" class="phone">
-									<i class="fas fa-phone"></i>
-									8 (499) 111-11-11 (Москва)
-								</a>
-								<a href="tel:88003333333" class="phone">
-									<i class="fas fa-phone"></i>
-									8 (800) 333-33-33 (Россия)
-								</a>
-							</div>
-							<div class="chat-feedback">
-								<a href="#">
-									<i class="far fa-comment-dots"></i>
-									Обратная связь
-								</a>
-							</div>
-							<div class="social-link">
-								<a class="btn-social" href="https://www.youtube.com/">
-									<img src="images/icon_you.svg" alt="youtube">
-								</a>
-								<a class="btn-social" href="https://www.instagram.com/" target="_blank">
-									<img src="images/icon_insta.svg" alt="instagram">
-								</a>
-								<a class="btn-social" href="https://www.facebook.com/" target="_blank">
-									<img src="images/icon_fb.svg" alt="facebook">
-								</a>
-							</div>								
-						</div>
-						<div class="col">
-							<h3>
-								<a class="footer_linc" href="#">Сервис и помощь</a>
-							</h3>
-							<a class="footer_linc" href="#">Часто задаваемые вопросы</a>
-							<a class="footer_linc" href="#">Условия доставки</a>
-							<a class="footer_linc" href="#">Обмен и возврат</a>
-							<a class="footer_linc" href="#">Оформление заказа</a>
-							<a class="footer_linc" href="#">Партнерская программа</a>
-							<a class="footer_linc" href="#">Личный кабинет</a>
-						</div>
-						<div class="col">
-							<h3>
-								<a class="footer_linc" href="#">О компании</a>
-							</h3>
-							<a class="footer_linc" href="#">Новости</a>
-							<a class="footer_linc" href="#">Документы</a>
-							<a class="footer_linc" href="#">Отзывы</a>
-							<a class="footer_linc" href="#">Блог</a>
-							<a class="footer_linc" href="#">Политика <br>конфиденциальности</a>
-						</div>
-						<div class="subscribe_b col-4">
-								<h3>Будьте первыми!</h3>
-								<p>
-									Хотите эксклюзивные предложения и первый доступ к продуктам?
-									Подпишитесь на рассылку уведомлений по электронной почте.
-								</p>
-								<div>
-									<span class="input-group">
-										<span class="input-group-text" id="addon-wrapping">@</span>
-										<input type="text" class="form-control" placeholder="Адрес электронной почты" aria-label="Username" aria-describedby="addon-wrapping">
-										<button class="btn btn-secondary" type="button" id="button-addon2">+</button>
-									</span>
-								</div>
-								<p>
-									*Нажимая на кнопку “+”, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с 
-									<a href=#> политикой конфиденциальности.</a><br>
-									Вы можете отписаться в любое время.
-								</p>
-								
-						</div>
-												
-					</div>
-				</div>			
-			</section>
-			<section class="bottom_footer">
-				 <div class="copyright">
-					Copyright © 2002-2021 Olga Chudnovskaya. Все права защищены.
-				 </div>
-			 </section>
-			</div>
-		</footer>           
-
-        <!-- Таблица размеров -->
-        <div id="Таблица размеров">
-            <h2>Таблица размеров</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>Международный</th>
-                  <th>Российский</th>
-                  <th>Объем груди</th>
-                  <th>Объем талии	</th>
-                  <th>Объем бедер</th>
-                </tr>
-                <tbody>
-                <tr>
-                  <td>S</td>
-                  <td>42</td>
-                  <td>84</td>
-                  <td>64</td>
-                  <td>92</td>
-                </tr>
-                <tr>
-                  <td>M</td>
-                  <td>44</td>
-                  <td>88</td>
-                  <td>68</td>
-                  <td>96</td>
-                </tr>
-                 <tr>
-                  <td>L</td>
-                  <td>46</td>
-                  <td>92</td>
-                  <td>72</td>
-                  <td>100</td>
-                </tr>
-                 <tr>
-                  <td>XL</td>
-                  <td>48</td>
-                  <td>96</td>
-                  <td>76</td>
-                  <td>104</td>
-                </tr>
-                </tbody>
-                </thead>
-            </table> 
+            <div class="top_footer container">
+                <div class="row">
+                    <div class = "contacts col">
+                        <a href="index.html" class="logo">
+                            <img src="images/logo_LETO_Man_white.svg" alt="логотип">
+                        </a>
+                        
+                        <div>
+                            <a href="tel:84951111111" class="phone">
+                                <i class="fas fa-phone-alt"></i>
+                                8 (499) 111-11-11 (Москва)
+                            </a>
+                            <a href="tel:88003333333" class="phone">
+                                <i class="fas fa-phone-alt"></i>
+                                8 (800) 333-33-33 (Россия)
+                            </a>
+                        </div>
+                        <div class="chat-feedback">
+                            <a href="#">
+                                <i class="far fa-comment-dots"></i>
+                                Обратная связь
+                            </a>
+                        </div>
+                        <div class="social-link">
+                            <a class="btn-social" href="https://www.youtube.com/">
+                                <img src="images/icon_you.svg" alt="youtube">
+                            </a>
+                            <a class="btn-social" href="https://www.instagram.com/" target="_blank">
+                                <img src="images/icon_insta.svg" alt="instagram">
+                            </a>
+                            <a class="btn-social" href="https://www.facebook.com/" target="_blank">
+                                <img src="images/icon_fb.svg" alt="facebook">
+                            </a>
+                        </div>								
+                    </div>
+                    <div class="contacts col">
+                        <h3>
+                            <a class="footer_linc" href="#">Сервис и помощь</a>
+                        </h3>
+                        <a class="footer_linc" href="#">Часто задаваемые вопросы</a>
+                        <a class="footer_linc" href="#">Условия доставки</a>
+                        <a class="footer_linc" href="#">Обмен и возврат</a>
+                        <a class="footer_linc" href="#">Оформление заказа</a>
+                        <a class="footer_linc" href="#">Партнерская программа</a>
+                        <a class="footer_linc" href="#">Личный кабинет</a>
+                    </div>
+                    <div class="contacts col">
+                        <h3>
+                            <a class="footer_linc" href="#">О компании</a>
+                        </h3>
+                        <a class="footer_linc" href="contacts.html">Контакты</a>
+                        <a class="footer_linc" href="#">Новости</a>
+                        <a class="footer_linc" href="#">Документы</a>
+                        <a class="footer_linc" href="#">Отзывы</a>
+                        <a class="footer_linc" href="#">Блог</a>
+                        <a class="footer_linc" href="#">Политика <br>конфиденциальности</a>
+                    </div>
+                    <div class="subscribe_b col-4">
+                        <h3>Будьте первыми!</h3>
+                        <p>
+                            Хотите эксклюзивные предложения и первый доступ к продуктам?
+                            Подпишитесь на рассылку уведомлений по электронной почте.
+                        </p>
+                        <div>
+                            <span class="input-group">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Ваш e-mail" aria-label="Username" aria-describedby="addon-wrapping">
+                                <button class="btn btn-secondary" type="button" id="button-addon2">+</button>
+                            </span>
+                        </div>
+                        <p>
+                            *Нажимая на кнопку “+”, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с 
+                            <a href=#> политикой конфиденциальности.</a><br>
+                            Вы можете отписаться в любое время.
+                        </p>                                         
+                    </div>        
+                </div>			
             </div>
+            <div class="bottom_footer copyright">
+                Copyright © 2002-2021 Olga Chudnovskaya. Все права защищены.
+             </div>
+            </div>
+        </footer>            
         
         <!--Popup-->
         <div class="popup-desk">
@@ -394,24 +367,13 @@
                 <a href="https://yandex.ru/" class="register">Зарегистрироваться</a>
             </div>
         </div>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas снизу</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
-            </div>
-            <div class="offcanvas-body small">
-              ...
-            </div>
-          </div>
-
-        
-        <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
+                <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
         <script src="js/login.js"></script>
         <!--<script src="js/sity.js"></script>-->
         <script src="js/scripts.js"></script>
+        <script src="js/gallery.js"></script>
 
     </body>
 </html>

@@ -2,12 +2,13 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Contacts</title>
+        <title>All_Shirts</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,600;1,400&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;1,100;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/calendar.css">
     </head>
     <body>
         <header class="container-fluid">
@@ -148,78 +149,153 @@
                 </div>
             </div>                                   
         </header> 
-        <main class="container contacts">
-            <section class="row">
-                <h1>
-                    Контакты
-                </h1>
-                <div class="contacts col my-3 g-5">
-                    <h5>ОФИС</h5>
-                    <a href="tel:88002222222" class="phone">
-                        <i class="fas fa-phone"></i>
-                        8 (800) 222-22-22 (Россия)
-                    </a>
-                   </p>  
-                    <h5>ДЛЯ РОЗНИЧНЫХ ПОКУПАТЕЛЕЙ</h5>
-                    <a href="tel:84951111111" class="phone">
-                        <i class="fas fa-phone"></i>
-                         8 (499) 111-11-11 (Москва)
-                    </a>
-
-                    <a href="tel:88003333333" class="phone">
-                        <i class="fas fa-phone"></i>
-                        8 (800) 333-33-33 (Россия)
-                    </a>
-                </div>
-                <div class="contacts col my-3 g-5">
-                    <h5> ИНТЕРНЕТ МАГАЗИН</h5>
-                    <a href="tel:84951111111" class="phone">
-                        <i class="fas fa-phone"></i>
-                        8 (499) 111-11-11 (Москва)
-                    </a>
-                    <a href="tel:88003333333" class="phone">
-                        <i class="fas fa-phone"></i>
-                        8 (800) 333-33-33 (Россия)
-                    </a> 
-                    <p>
-                        Прием заказов на сайте – круглосуточно<br>
-                        Обработка и прием заказов по телефону:<br>
-                        7 дней в неделю с 9:00 до 18:00<br>
-                        Доставка ежедневно
-                    </p>
-                </div>      
-            </section>
-            <section class="row my-5 g-5">
-                <div class="order-form feedback col my-3">
-                    <form action="#" method="post" id="feedback">
-                        <h3>Связаться с нами</h3>                               
-                            <input type="text" placeholder="Ваше имя*" id="name" name="user_name">                   
-                            <input type="email" placeholder="Ваш E-mail*" id="email" name="user_mail">  
-                            <input type="text" placeholder="+7" id="phone" name="user_phone">                      
-                            <textarea placeholder="Ваше сообщение" id="comment" name="user_comment"></textarea>
-                            <div class="form-title">
-                                Нажимая кнопку "Отправить", Вы принимаете условия <a href="#">соглашения о конфиденциальной информации</a>
-                            </div>
-
-                            <button type="submit" class="btn btn-dark">Отправить</button>
-                    </form>
-                </div>
-                <div class="col my-3">
-                    <div class="map">                       
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A711cbcb6dde0423235869033be70f633e0609b85cb651f785c8d5c208c4c8bf0&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-                        <!--<img src="img/map.jpg" alt="карта">-->
-                    </div>
-                    <div class="contacts my-5">
-                        <h5> АДРЕС:</h5>
-                        <p>
-                            107564, Москва г, Зелёная ул, дом 1, строение 2,<br>
-                            этаж 3, офис 333
-                        </p> 
-                        <p>ООО «СУПЕР ОДЕЖДА» ОГРН 1117700011111</p>
-                    </div>
-                </div>
+        <main class="container">
+            <section class=" container">
+                <h1>Рубашки и футболки</h1>
             </section>    
-        </main>
+            <div class="catalog">
+                <aside>
+                    <div class="catmenu">
+                        <div class="catmenu_item">
+                            <a href="#">Рубашки и футболки</a>
+                            <div class="submenu">
+                                <a href="subcategory.html" class="pulldown-point">Рубашки с коротким рукавом</a>
+                                <a href="#">Рубашки с длинным рукавом</a>
+                                <a href="#">Поло</a>
+                                <a href="#">Футболки с короткими рукавами</a>
+                                <a href="#">Футболки с длинным рукавом</a>
+                            </div>
+                            <div class="submenu_mover">+</div>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#">Брюки и джинсы</a>
+                            <div class="submenu">
+                                <a href="#">Брюки чинос</a>
+                                <a href="#">Джинсы</a>
+                                <a href="#">Джоггеры</a>
+                                <a href="#">Классические брюки</a>                                                                    
+                            </div>
+                            <div class="submenu_mover">+</div>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#">Шорты и плавки</a>
+                            <div class="submenu">
+                                <a href="#">Шорты чинос</a>
+                                <a href="#">Повседневные шорты</a>
+                                <a href="#">Плавки</a>                                    
+                            </div>
+                            <div class="submenu_mover">+</div>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#">Костюмы и блейзеры</a>
+                            <div class="submenu">
+                                <a href="#">Костюмы</a>
+                                <a href="#">Блейзеры</a>
+                                <a href="#">Костюмные брюки</a>
+                                
+                            </div>
+                            <div class="submenu_mover">+</div>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#" class="catmenu-head">Большие размеры</a>    
+                            <div class="submenu">
+                                <a href="#">Брюки и джинсы</a>
+                                <a href="#">Рубашки и футболки</a>
+                                <a href="#">Шорты и плавки</a>
+                                <a href="#">Костюмы и блейзеры</a>
+                            </div>
+                            <div class="submenu_mover">+</div>
+                        </div>                               
+                    </div>
+                </aside> 
+                <div class="row">
+                    <div class="card catalog-card">
+                        <img src="images/shirt_1.jpg" class="card-img-top" alt="рубашка коралл">
+                        <div class="card-body">
+                            <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
+                            <p class="card-text">Лёгкая рубашка яркого цвета для яркого отдыха.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Коралл</li>
+                            <li class="price list-group-item">1500 </li>
+                        </ul>
+                        <div class="card-footer">
+                            <a href="#" class="stretched-link">Подробнее</a>
+                        </div>
+                    </div>                             
+                    <div class="card catalog-card">
+                        <img src="images/shirt_tuk_1.jpg" class="card-img-top" alt="рубашка с туканами">
+                        <div class="card-body">
+                            <h5 class="card-title">Рубашка свободного кроя с воротником-апаш</h5>
+                            <p class="card-text">Бестселлер с забавным летним рисунком для насыщенного отдыха.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Туканы на бирюзовом</li>
+                            <li class="price list-group-item">5000 </li>
+                        </ul>
+                        <div class="card-footer">
+                            <a href="#" class="stretched-link">Подробнее</a>
+                        </div>
+                    </div>                            
+                    <div class="card catalog-card">
+                        <img src="images/shirt_5.jpg" class="card-img-top" alt="Футболка со стрекозой">
+                        <div class="card-body">
+                            <h5 class="card-title">Рубашка-стрейч c коротким рукавоми</h5>
+                            <p class="card-text">Лёгкая рубашка яркого цвета для яркого отдыха.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Оранжевый</li>
+                            <li class="price list-group-item">1500 </li>
+                        </ul>
+                        <div class="card-footer">
+                            <a href="product.html" class="stretched-link">Подробнее</a>
+                        </div>
+                    </div>                            
+                    <div class="card catalog-card">
+                        <img src="images/shirt_4.jpg" class="card-img" alt="Рубашка-стрейч c коротким рукавом">
+                        <div class="card-body">
+                            <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
+                            <p class="card-text">Лёгкая рубашка яркого цвета для яркого отдыха.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Бирюза</li>
+                            <li class="price list-group-item">1500 </li>
+                        </ul>
+                        <div class="card-footer">
+                            <a href="#" class="stretched-link">Подробнее</a>
+                        </div>
+                    </div>                            
+                    <div class="card catalog-card">
+                        <img src="images/shirt_6.jpg" class="card-img-top" alt="трикотажная рубашка c коротким рукавом">
+                        <div class="card-body">
+                            <h5 class="card-title">Трикотажная рубашка c коротким рукавом</h5>
+                            <p class="card-text">Бестселлер с забавным летним рисунком для насыщенного отдыха.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Рыбы на коралле</li>
+                            <li class="cena_old price list-group-item"><span class="">3000 ₽ </span>     1500 </li>
+                        </ul>
+                        <div class="card-footer">
+                            <a href="#" class="stretched-link">Подробнее</a>
+                        </div>
+                    </div>                            
+                    <div class="card catalog-card">
+                        <img src="images/shirt_7.jpg" class="card-img-top" alt="Футболка со стрекозой">
+                        <div class="card-body">
+                            <h5 class="card-title">Рубашка-стрейч c коротким рукавом</h5>
+                            <p class="card-text">Светлая рубашка для самых жарких дней.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Голубая клетка</li>
+                            <li class="price list-group-item">3000 </li>
+                        </ul>
+                        <div class="card-footer">
+                            <a href="#" class="stretched-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>                                                    
+            </div> 
+        </main>             
         <footer class="container-fluid">
             <div class="top_footer container">
                 <div class="row">
@@ -303,7 +379,7 @@
                 Copyright © 2002-2021 Olga Chudnovskaya. Все права защищены.
              </div>
             </div>
-        </footer>           
+        </footer>                    
         <!--Popup-->
         <div class="popup-desk">
             <div class="popup">
@@ -312,6 +388,10 @@
         <script src="https://kit.fontawesome.com/fba1ddaab0.js" crossorigin="anonymous"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/order.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/calendar.js"></script>
+        
     </body>
 </html>
