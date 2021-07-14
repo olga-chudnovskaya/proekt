@@ -90,10 +90,4 @@ $(function(){
         }
     });
 
-    /* burger-menu */
-$(document).ready(function() {
-	$('.btn-burger').click(function() {
-		let e = document.getElementById('bottom-header');
-		e.style.display = 'block';
-	});
-});
+ 
